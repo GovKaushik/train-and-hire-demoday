@@ -1,0 +1,194 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-cardi-border;
+  }
+
+  body {
+    @apply bg-cardi-cloud text-cardi-ink antialiased;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    scroll-behavior: smooth;
+  }
+}
+
+:root {
+  /* New Cardi Design Tokens */
+  --cardi-ink: #0B0B0C;
+  --cardi-cloud: #F8FAFC;
+  --cardi-border: #E5E7EB;
+
+  /* Cardinality Pentagon Palette */
+  --cardi-red: #E11D48;
+  --cardi-orange: #FB923C;
+  --cardi-yellow: #F59E0B;
+  --cardi-green: #10B981;
+  --cardi-blue: #3B82F6;
+  --cardi-indigo: #6366F1;
+
+  /* Gradient Recipes */
+  --brand-sweep: linear-gradient(45deg, var(--cardi-red), var(--cardi-yellow), var(--cardi-green), var(--cardi-blue));
+  --calm-fade: linear-gradient(to bottom, var(--cardi-cloud), #EEF2FF);
+
+  /* Typography Scale */
+  --font-display: 80px;
+  --font-h1: 64px;
+  --font-h2: 40px;
+  --font-h3: 28px;
+  --font-body: 20px;
+  --font-caption: 16px;
+
+  /* Motion System */
+  --ease-standard: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-hero: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --duration-small: 180ms;
+  --duration-medium: 360ms;
+  --duration-hero: 600ms;
+  --stagger: 60ms;
+
+  --section-height: 100vh;
+}
+
+/* Typography System */
+.font-display {
+  font-size: var(--font-display);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+.font-h1 {
+  font-size: var(--font-h1);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.002em;
+}
+
+.font-h2 {
+  font-size: var(--font-h2);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.002em;
+}
+
+.font-h3 {
+  font-size: var(--font-h3);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.002em;
+}
+
+.font-body {
+  font-size: var(--font-body);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.font-caption {
+  font-size: var(--font-caption);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* Surface Design System */
+.card-surface {
+  background: rgba(255, 255, 255, 0.67);
+  border: 1px solid var(--cardi-border);
+  border-radius: 24px;
+  box-shadow: 0 24px 60px -24px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(16px);
+}
+
+.pill-surface {
+  border-radius: 20px;
+  transition: all var(--duration-small) var(--ease-standard);
+}
+
+.pill-surface:hover {
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Brand Gradient Utilities */
+.bg-brand-sweep {
+  background: var(--brand-sweep);
+}
+
+.bg-calm-fade {
+  background: var(--calm-fade);
+}
+
+/* Projector Mode Overrides */
+.projector-mode {
+  --font-display: 88px;
+  --font-h1: 72px;
+  --font-h2: 44px;
+  --font-h3: 32px;
+  --font-body: 22px;
+  --font-caption: 18px;
+}
+
+.projector-mode h1 {
+  font-size: var(--font-h1) !important;
+  font-weight: 800 !important;
+  line-height: 1.1 !important;
+}
+
+.projector-mode h2 {
+  font-size: var(--font-h2) !important;
+  font-weight: 700 !important;
+}
+
+.projector-mode h3 {
+  font-size: var(--font-h3) !important;
+  font-weight: 600 !important;
+}
+
+.projector-mode p,
+.projector-mode span,
+.projector-mode div {
+  font-size: var(--font-body) !important;
+  line-height: 1.6 !important;
+}
+
+.projector-mode button {
+  border-width: 2px !important;
+  font-weight: 600 !important;
+}
+
+.projector-mode .shadow-lg,
+.projector-mode .shadow-xl,
+.projector-mode .shadow-2xl {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Focus Management */
+.focus-visible {
+  outline: 2px solid var(--cardi-blue);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Utilities */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .parallax-motion {
+    transform: none !important;
+  }
+}
