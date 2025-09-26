@@ -115,9 +115,9 @@ export function Carousel({ items, className }: CarouselProps) {
                     )}
                   </div>
                   <div className="space-y-3">
-                    <h3 className="font-bold text-xl text-cardi-ink">{item.title}</h3>
-                    <p className="text-sm text-cardi-slate font-medium">by {item.author}</p>
-                    <p className="text-sm text-cardi-slate/80 leading-relaxed">{item.caption}</p>
+                    <h3 className="font-bold text-xl text-cardy-ink">{item.title}</h3>
+                    <p className="text-sm text-cardy-slate font-medium">by {item.author}</p>
+                    <p className="text-sm text-cardy-slate/80 leading-relaxed">{item.caption}</p>
                   </div>
                 </div>
               </div>
@@ -130,13 +130,13 @@ export function Carousel({ items, className }: CarouselProps) {
           className="absolute left-6 top-1/2 -translate-y-1/2 w-14 h-14 bg-white/95 backdrop-blur-xl rounded-full shadow-2xl flex items-center justify-center hover:bg-white hover:scale-110 transition-all duration-300 z-10 border border-white/20"
           onClick={scrollPrev}
         >
-          <ChevronLeft className="w-6 h-6 text-cardi-ink" />
+          <ChevronLeft className="w-6 h-6 text-cardy-ink" />
         </button>
         <button
           className="absolute right-6 top-1/2 -translate-y-1/2 w-14 h-14 bg-white/95 backdrop-blur-xl rounded-full shadow-2xl flex items-center justify-center hover:bg-white hover:scale-110 transition-all duration-300 z-10 border border-white/20"
           onClick={scrollNext}
         >
-          <ChevronRight className="w-6 h-6 text-cardi-ink" />
+          <ChevronRight className="w-6 h-6 text-cardy-ink" />
         </button>
 
         {/* Enhanced Dots */}
@@ -147,7 +147,7 @@ export function Carousel({ items, className }: CarouselProps) {
               className={cn(
                 'rounded-full transition-all duration-300',
                 index === selectedIndex
-                  ? 'w-8 h-3 bg-cardi-ink shadow-lg'
+                  ? 'w-8 h-3 bg-cardy-ink shadow-lg'
                   : 'w-3 h-3 bg-gray-300 hover:bg-gray-400 hover:scale-125'
               )}
               onClick={() => scrollTo(index)}
@@ -186,8 +186,8 @@ export function Carousel({ items, className }: CarouselProps) {
               </div>
               <div className="text-center">
                 <h3 className="text-2xl font-bold mb-2">{items[lightboxIndex].title}</h3>
-                <p className="text-cardi-slate mb-2">by {items[lightboxIndex].author}</p>
-                <p className="text-cardi-slate">{items[lightboxIndex].caption}</p>
+                <p className="text-cardy-slate mb-2">by {items[lightboxIndex].author}</p>
+                <p className="text-cardy-slate">{items[lightboxIndex].caption}</p>
               </div>
             </div>
 

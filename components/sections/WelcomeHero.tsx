@@ -29,7 +29,7 @@ export function WelcomeHero({
   return (
     <section id="welcome" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Always show gradient background first to avoid hydration mismatch */}
-      <div className="absolute inset-0 bg-gradient-to-br from-cardi-cloud via-white to-blue-50 z-0" />
+      <div className="absolute inset-0 bg-gradient-to-br from-cardy-cloud via-white to-blue-50 z-0" />
 
       {/* Background Video - only render on client */}
       {isClient && heroVideo && (
@@ -64,7 +64,7 @@ export function WelcomeHero({
           <polygon
             points="50,5 95,35 77,85 23,85 5,35"
             fill="currentColor"
-            className="text-cardi-ink"
+            className="text-cardy-ink"
           />
         </svg>
       </div>
@@ -78,7 +78,7 @@ export function WelcomeHero({
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
         >
-          <h1 className="text-5xl md:text-7xl font-bold text-cardi-ink leading-tight tracking-tight">
+          <h1 className="text-5xl md:text-7xl font-bold text-cardy-ink leading-tight tracking-tight">
             {title} {/* Updated title from content.json */}
           </h1>
 
@@ -90,7 +90,7 @@ export function WelcomeHero({
             transition={{ duration: 0.8, delay: 1.2 }}
           >
             <motion.div
-              className="h-full bg-gradient-to-r from-cardi-red to-cardi-yellow"
+              className="h-full bg-gradient-to-r from-cardy-red to-cardy-yellow"
               initial={{ x: '-100%' }}
               animate={{ x: '100%' }}
               transition={{
@@ -106,7 +106,7 @@ export function WelcomeHero({
 
         {/* Subtitle */}
         <motion.h2
-          className="text-3xl md:text-4xl font-semibold text-cardi-slate"
+          className="text-3xl md:text-4xl font-semibold text-cardy-slate"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.8 }}
@@ -116,7 +116,7 @@ export function WelcomeHero({
 
         {/* Cohort meta */}
         <motion.p
-          className="text-lg md:text-xl text-cardi-slate/80 font-medium"
+          className="text-lg md:text-xl text-cardy-slate/80 font-medium"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 2.1 }}
@@ -132,12 +132,12 @@ export function WelcomeHero({
           transition={{ duration: 1, delay: 3 }}
         >
           <motion.div
-            className="w-6 h-10 border-2 border-cardi-slate/40 rounded-full flex justify-center"
+            className="w-6 h-10 border-2 border-cardy-slate/40 rounded-full flex justify-center"
             animate={{ opacity: [0.4, 1, 0.4] }}
             transition={{ duration: 2, repeat: Infinity }}
           >
             <motion.div
-              className="w-1 h-2 bg-cardi-slate/60 rounded-full mt-2"
+              className="w-1 h-2 bg-cardy-slate/60 rounded-full mt-2"
               animate={{ y: [0, 12, 0] }}
               transition={{ duration: 2, repeat: Infinity }}
             />

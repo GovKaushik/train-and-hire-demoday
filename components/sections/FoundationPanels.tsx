@@ -37,7 +37,7 @@ export function FoundationPanels({ data }: FoundationPanelsProps) {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-cardi-ink mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-cardy-ink mb-6">
             Our Foundation
           </h2>
           <motion.div
@@ -62,11 +62,11 @@ export function FoundationPanels({ data }: FoundationPanelsProps) {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative"
           >
-            <AnimatedCard className="h-full border-t-4 border-cardi-blue bg-white/95 backdrop-blur-xl">
+            <AnimatedCard className="h-full border-t-4 border-cardy-blue bg-white/95 backdrop-blur-xl">
               <div className="space-y-6">
                 {/* Icon */}
                 <motion.div
-                  className="w-16 h-16 bg-gradient-to-br from-cardi-blue to-blue-600 rounded-2xl flex items-center justify-center shadow-xl"
+                  className="w-16 h-16 bg-gradient-to-br from-cardy-blue to-blue-600 rounded-2xl flex items-center justify-center shadow-xl"
                   whileHover={{ scale: 1.05, rotate: 5 }}
                   transition={{ type: "spring", damping: 20 }}
                 >
@@ -75,10 +75,10 @@ export function FoundationPanels({ data }: FoundationPanelsProps) {
 
                 {/* Content */}
                 <div>
-                  <h3 className="text-2xl md:text-3xl font-bold text-cardi-ink mb-4">
+                  <h3 className="text-2xl md:text-3xl font-bold text-cardy-ink mb-4">
                     {data.why.title}
                   </h3>
-                  <p className="text-lg text-cardi-slate leading-relaxed">
+                  <p className="text-lg text-cardy-slate leading-relaxed">
                     {data.why.body}
                   </p>
                 </div>
@@ -88,7 +88,7 @@ export function FoundationPanels({ data }: FoundationPanelsProps) {
 
           {/* Animated divider line - desktop only */}
           <motion.div
-            className="hidden lg:block absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-px h-32 bg-gradient-to-b from-transparent via-cardi-blue/30 to-transparent"
+            className="hidden lg:block absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-px h-32 bg-gradient-to-b from-transparent via-cardy-blue/30 to-transparent"
             initial={{ height: 0, opacity: 0 }}
             whileInView={{ height: '8rem', opacity: 1 }}
             viewport={{ once: true }}
@@ -103,11 +103,11 @@ export function FoundationPanels({ data }: FoundationPanelsProps) {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="relative"
           >
-            <AnimatedCard className="h-full border-t-4 border-cardi-blue bg-white/95 backdrop-blur-xl">
+            <AnimatedCard className="h-full border-t-4 border-cardy-blue bg-white/95 backdrop-blur-xl">
               <div className="space-y-6">
                 {/* Icon */}
                 <motion.div
-                  className="w-16 h-16 bg-gradient-to-br from-blue-600 to-cardi-blue rounded-2xl flex items-center justify-center shadow-xl"
+                  className="w-16 h-16 bg-gradient-to-br from-blue-600 to-cardy-blue rounded-2xl flex items-center justify-center shadow-xl"
                   whileHover={{ scale: 1.05, rotate: -5 }}
                   transition={{ type: "spring", damping: 20 }}
                 >
@@ -116,10 +116,10 @@ export function FoundationPanels({ data }: FoundationPanelsProps) {
 
                 {/* Content */}
                 <div>
-                  <h3 className="text-2xl md:text-3xl font-bold text-cardi-ink mb-4">
+                  <h3 className="text-2xl md:text-3xl font-bold text-cardy-ink mb-4">
                     {data.mission.title}
                   </h3>
-                  <p className="text-lg text-cardi-slate leading-relaxed">
+                  <p className="text-lg text-cardy-slate leading-relaxed">
                     {data.mission.body}
                   </p>
                 </div>
@@ -136,7 +136,7 @@ export function FoundationPanels({ data }: FoundationPanelsProps) {
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 1 }}
         >
-          <div className="h-px bg-gradient-to-r from-transparent via-cardi-blue/20 to-transparent" />
+          <div className="h-px bg-gradient-to-r from-transparent via-cardy-blue/20 to-transparent" />
         </motion.div>
       </div>
     </section>

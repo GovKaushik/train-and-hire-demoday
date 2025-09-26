@@ -45,7 +45,7 @@ export function CohortMiniInfographic({ data, sectionId }: CohortMiniInfographic
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-cardi-ink mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-cardy-ink mb-6">
             {data.title}
           </h2>
 
@@ -59,7 +59,7 @@ export function CohortMiniInfographic({ data, sectionId }: CohortMiniInfographic
               transition={{ delay: 0.3, duration: 0.5 }}
             >
               <Users className="w-5 h-5" style={{ color: sectionColor.accent }} />
-              <span className="font-semibold text-cardi-ink">{data.size} members</span>
+              <span className="font-semibold text-cardy-ink">{data.size} members</span>
             </motion.div>
 
             <motion.div
@@ -70,7 +70,7 @@ export function CohortMiniInfographic({ data, sectionId }: CohortMiniInfographic
               transition={{ delay: 0.5, duration: 0.5 }}
             >
               <TrendingUp className="w-5 h-5" style={{ color: sectionColor.accent }} />
-              <span className="font-semibold text-cardi-ink">80% retention</span>
+              <span className="font-semibold text-cardy-ink">80% retention</span>
             </motion.div>
 
             <motion.div
@@ -81,11 +81,11 @@ export function CohortMiniInfographic({ data, sectionId }: CohortMiniInfographic
               transition={{ delay: 0.7, duration: 0.5 }}
             >
               <Award className="w-5 h-5" style={{ color: sectionColor.accent }} />
-              <span className="font-semibold text-cardi-ink">4 completed</span>
+              <span className="font-semibold text-cardy-ink">4 completed</span>
             </motion.div>
           </div>
 
-          <p className="text-lg text-cardi-slate max-w-2xl mx-auto">
+          <p className="text-lg text-cardy-slate max-w-2xl mx-auto">
             {data.notes}
           </p>
         </motion.div>
@@ -100,7 +100,7 @@ export function CohortMiniInfographic({ data, sectionId }: CohortMiniInfographic
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 * (index + 3) }}
             >
-              <AnimatedCard className="p-6 h-full border-l-4 hover:shadow-xl transition-all duration-300 border-l-cardi-green">
+              <AnimatedCard className="p-6 h-full border-l-4 hover:shadow-xl transition-all duration-300 border-l-cardy-green">
                 <div className="flex items-start space-x-4">
                   {/* Avatar with status indicator */}
                   <div className="relative flex-shrink-0">
@@ -118,7 +118,7 @@ export function CohortMiniInfographic({ data, sectionId }: CohortMiniInfographic
                   {/* Content */}
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center space-x-2 mb-2">
-                      <h3 className="text-xl font-bold text-cardi-ink">{story.name}</h3>
+                      <h3 className="text-xl font-bold text-cardy-ink">{story.name}</h3>
                       <motion.div
                         className="flex items-center space-x-1 px-2 py-1 rounded-full text-xs font-medium text-white shadow-sm"
                         style={{ backgroundColor: sectionColor.accent }}
@@ -132,11 +132,11 @@ export function CohortMiniInfographic({ data, sectionId }: CohortMiniInfographic
                       </motion.div>
                     </div>
 
-                    <p className="text-sm font-semibold text-cardi-slate mb-3">
+                    <p className="text-sm font-semibold text-cardy-slate mb-3">
                       {story.status}
                     </p>
 
-                    <p className="text-sm text-cardi-slate leading-relaxed">
+                    <p className="text-sm text-cardy-slate leading-relaxed">
                       {story.blurb}
                     </p>
                   </div>
@@ -150,7 +150,7 @@ export function CohortMiniInfographic({ data, sectionId }: CohortMiniInfographic
                   viewport={{ once: true }}
                   transition={{ delay: 0.9 + (index * 0.1) }}
                 >
-                  <div className="flex justify-between text-xs text-cardi-slate">
+                  <div className="flex justify-between text-xs text-cardy-slate">
                     <span>Impact Score</span>
                     <span className="font-semibold">High</span>
                   </div>
@@ -185,7 +185,7 @@ export function CohortMiniInfographic({ data, sectionId }: CohortMiniInfographic
               animate={{ opacity: [1, 0.3, 1] }}
               transition={{ duration: 2, repeat: Infinity }}
             />
-            <span className="text-sm font-medium text-cardi-ink">
+            <span className="text-sm font-medium text-cardy-ink">
               Humble beginnings, extraordinary outcomes
             </span>
           </div>

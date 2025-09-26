@@ -1,0 +1,79 @@
+/* =============================================================================
+   CARDY DESIGN TOKENS - COMPREHENSIVE BRAND SYSTEM
+   ============================================================================= */
+
+/* Primary Brand Colors */
+--cardy-ink: #0A0A0B;           /* Primary text - deep black */
+--cardy-cloud: #FAFBFC;         /* Background - soft white */
+--cardy-border: #E2E8F0;        /* Subtle borders */
+
+/* Full Cardy Pentagon Color Palette */
+--cardy-red: #EF4444;           /* Vibrant red */
+--cardy-orange: #F97316;        /* Warm orange */
+--cardy-yellow: #EAB308;        /* Golden yellow */
+--cardy-green: #22C55E;         /* Fresh green */
+--cardy-blue: #3B82F6;          /* Primary blue */
+--cardy-indigo: #6366F1;        /* Deep indigo */
+--cardy-purple: #A855F7;        /* Rich purple */
+--cardy-pink: #EC4899;          /* Vibrant pink */
+
+/* Gradient Recipes */
+--cardy-brand-sweep: linear-gradient(135deg,
+  var(--cardy-red) 0%,
+  var(--cardy-orange) 14%,
+  var(--cardy-yellow) 28%,
+  var(--cardy-green) 42%,
+  var(--cardy-blue) 56%,
+  var(--cardy-indigo) 70%,
+  var(--cardy-purple) 84%,
+  var(--cardy-pink) 100%);
+
+--cardy-hero-gradient: linear-gradient(135deg,
+  var(--cardy-blue) 0%,
+  var(--cardy-indigo) 100%);
+
+--cardy-calm-fade: linear-gradient(to bottom,
+  var(--cardy-cloud),
+  rgba(238, 242, 255, 0.8));
+
+/* Surface Effects */
+--glass-surface: rgba(255, 255, 255, 0.8);
+--glass-border: rgba(255, 255, 255, 0.2);
+--premium-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+--elevated-shadow: 0 32px 64px -16px rgba(0, 0, 0, 0.2);
+
+/* Typography Scale */
+--font-display: 96px;          /* Hero headlines */
+--font-h1: 72px;               /* Major headings */
+--font-h2: 48px;               /* Section headings */
+--font-h3: 32px;               /* Subsection headings */
+--font-body: 18px;             /* Body text */
+--font-caption: 14px;          /* Small text */
+--font-micro: 12px;            /* Tiny labels */
+
+/* Motion System */
+--cardy-ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+--cardy-ease-hero: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+--cardy-dur-sm: 180ms;
+--cardy-dur-md: 360ms;
+--cardy-dur-lg: 600ms;
+--cardy-dur-hero: 900ms;
+--cardy-stagger: 60ms;
+
+/* Layout & Spacing */
+--cardy-radius-sm: 8px;
+--cardy-radius-md: 16px;
+--cardy-radius-lg: 24px;
+--cardy-radius-xl: 32px;
+
+/* Projector Mode Overrides */
+@media (min-width: 1200px) {
+  .projector-mode {
+    --font-display: 104px;
+    --font-h1: 80px;
+    --font-h2: 52px;
+    --font-h3: 36px;
+    --font-body: 22px;
+    --font-caption: 18px;
+  }
+}

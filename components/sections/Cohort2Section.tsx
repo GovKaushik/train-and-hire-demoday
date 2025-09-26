@@ -57,7 +57,7 @@ export function Cohort2Section({ data }: Cohort2SectionProps) {
         >
           <div className="space-y-4">
             <motion.h2
-              className="font-h1 text-cardi-ink"
+              className="font-h1 text-cardy-ink"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -67,7 +67,7 @@ export function Cohort2Section({ data }: Cohort2SectionProps) {
             </motion.h2>
 
             <motion.div
-              className="w-32 h-1 bg-gradient-to-r from-cardi-yellow to-cardi-orange mx-auto rounded-full"
+              className="w-32 h-1 bg-gradient-to-r from-cardy-yellow to-cardy-orange mx-auto rounded-full"
               initial={{ width: 0, opacity: 0 }}
               whileInView={{ width: 128, opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -75,7 +75,7 @@ export function Cohort2Section({ data }: Cohort2SectionProps) {
             />
 
             <motion.h3
-              className="font-h3 text-cardi-ink/80"
+              className="font-h3 text-cardy-ink/80"
               initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
@@ -85,7 +85,7 @@ export function Cohort2Section({ data }: Cohort2SectionProps) {
             </motion.h3>
 
             <motion.p
-              className="font-body text-cardi-ink/70 max-w-3xl mx-auto"
+              className="font-body text-cardy-ink/70 max-w-3xl mx-auto"
               initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.8 }}
@@ -105,10 +105,10 @@ export function Cohort2Section({ data }: Cohort2SectionProps) {
           viewport={{ once: true }}
         >
           {[
-            { label: 'Started', value: stats.started, icon: Users, color: 'from-cardi-yellow to-cardi-orange' },
-            { label: 'Active', value: stats.active, icon: CheckCircle, color: 'from-cardi-orange to-cardi-red' },
-            { label: 'Retention', value: stats.retention, icon: BarChart3, color: 'from-cardi-green to-cardi-yellow' },
-            { label: 'Progress', value: stats.completion, icon: Clock, color: 'from-cardi-blue to-cardi-green' }
+            { label: 'Started', value: stats.started, icon: Users, color: 'from-cardy-yellow to-cardy-orange' },
+            { label: 'Active', value: stats.active, icon: CheckCircle, color: 'from-cardy-orange to-cardy-red' },
+            { label: 'Retention', value: stats.retention, icon: BarChart3, color: 'from-cardy-green to-cardy-yellow' },
+            { label: 'Progress', value: stats.completion, icon: Clock, color: 'from-cardy-blue to-cardy-green' }
           ].map((stat, index) => {
             const IconComponent = stat.icon
 
@@ -128,8 +128,8 @@ export function Cohort2Section({ data }: Cohort2SectionProps) {
                   <IconComponent className="w-8 h-8 text-white" />
                 </div>
                 <div className="space-y-2">
-                  <div className="font-h2 text-cardi-ink">{stat.value}</div>
-                  <div className="font-caption text-cardi-ink/60 uppercase tracking-wide">{stat.label}</div>
+                  <div className="font-h2 text-cardy-ink">{stat.value}</div>
+                  <div className="font-caption text-cardy-ink/60 uppercase tracking-wide">{stat.label}</div>
                 </div>
               </motion.div>
             )
@@ -144,12 +144,12 @@ export function Cohort2Section({ data }: Cohort2SectionProps) {
           transition={{ duration: 0.8, delay: 0.7 }}
           viewport={{ once: true }}
         >
-          <h3 className="font-h2 text-cardi-ink text-center mb-8">Program Improvements</h3>
+          <h3 className="font-h2 text-cardy-ink text-center mb-8">Program Improvements</h3>
           <div className="flex flex-wrap justify-center gap-4">
             {improvements.map((improvement, index) => (
               <motion.div
                 key={index}
-                className="px-6 py-3 bg-gradient-to-r from-cardi-yellow/10 to-cardi-orange/10 backdrop-blur-sm rounded-full border border-cardi-yellow/20"
+                className="px-6 py-3 bg-gradient-to-r from-cardy-yellow/10 to-cardy-orange/10 backdrop-blur-sm rounded-full border border-cardy-yellow/20"
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{
@@ -158,7 +158,7 @@ export function Cohort2Section({ data }: Cohort2SectionProps) {
                 }}
                 viewport={{ once: true }}
               >
-                <span className="font-body text-cardi-ink font-medium">
+                <span className="font-body text-cardy-ink font-medium">
                   {improvement}
                 </span>
               </motion.div>
@@ -175,8 +175,8 @@ export function Cohort2Section({ data }: Cohort2SectionProps) {
           viewport={{ once: true }}
         >
           <div className="text-center space-y-4">
-            <h3 className="font-h2 text-cardi-ink">Dual-Track Learning</h3>
-            <p className="font-body text-cardi-ink/60">
+            <h3 className="font-h2 text-cardy-ink">Dual-Track Learning</h3>
+            <p className="font-body text-cardy-ink/60">
               Specialized tracks tailored for different career paths
             </p>
           </div>
@@ -191,35 +191,35 @@ export function Cohort2Section({ data }: Cohort2SectionProps) {
               viewport={{ once: true }}
             >
               {/* Background gradient overlay on hover */}
-              <div className="absolute inset-0 bg-gradient-to-br from-cardi-blue/5 to-cardi-indigo/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-br from-cardy-blue/5 to-cardy-indigo/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
               <div className="relative z-10 space-y-6">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-4">
-                    <div className="w-16 h-16 bg-gradient-to-br from-cardi-blue to-cardi-indigo rounded-2xl flex items-center justify-center shadow-lg">
+                    <div className="w-16 h-16 bg-gradient-to-br from-cardy-blue to-cardy-indigo rounded-2xl flex items-center justify-center shadow-lg">
                       <BarChart3 className="w-8 h-8 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-h3 text-cardi-ink">{tracks.ba.name}</h4>
-                      <span className="font-caption text-cardi-ink/60">
+                      <h4 className="font-h3 text-cardy-ink">{tracks.ba.name}</h4>
+                      <span className="font-caption text-cardy-ink/60">
                         {tracks.ba.participants} participants
                       </span>
                     </div>
                   </div>
-                  <PentagonMotif size="sm" color="cardi-blue" opacity={8} animate={false} />
+                  <PentagonMotif size="sm" color="cardy-blue" opacity={8} animate={false} />
                 </div>
 
-                <p className="font-body text-cardi-ink/80">
+                <p className="font-body text-cardy-ink/80">
                   {tracks.ba.focus}
                 </p>
 
                 <div className="space-y-3">
-                  <h5 className="font-body font-semibold text-cardi-ink">Key Projects:</h5>
+                  <h5 className="font-body font-semibold text-cardy-ink">Key Projects:</h5>
                   <div className="space-y-2">
                     {tracks.ba.projects.map((project, i) => (
                       <div key={i} className="flex items-center space-x-2">
-                        <div className="w-2 h-2 bg-cardi-blue rounded-full" />
-                        <span className="font-caption text-cardi-ink/70">{project}</span>
+                        <div className="w-2 h-2 bg-cardy-blue rounded-full" />
+                        <span className="font-caption text-cardy-ink/70">{project}</span>
                       </div>
                     ))}
                   </div>
@@ -236,35 +236,35 @@ export function Cohort2Section({ data }: Cohort2SectionProps) {
               viewport={{ once: true }}
             >
               {/* Background gradient overlay on hover */}
-              <div className="absolute inset-0 bg-gradient-to-br from-cardi-green/5 to-cardi-yellow/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-br from-cardy-green/5 to-cardy-yellow/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
               <div className="relative z-10 space-y-6">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-4">
-                    <div className="w-16 h-16 bg-gradient-to-br from-cardi-green to-cardi-yellow rounded-2xl flex items-center justify-center shadow-lg">
+                    <div className="w-16 h-16 bg-gradient-to-br from-cardy-green to-cardy-yellow rounded-2xl flex items-center justify-center shadow-lg">
                       <Zap className="w-8 h-8 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-h3 text-cardi-ink">{tracks.wai.name}</h4>
-                      <span className="font-caption text-cardi-ink/60">
+                      <h4 className="font-h3 text-cardy-ink">{tracks.wai.name}</h4>
+                      <span className="font-caption text-cardy-ink/60">
                         {tracks.wai.participants} participants
                       </span>
                     </div>
                   </div>
-                  <PentagonMotif size="sm" color="cardi-green" opacity={8} animate={false} />
+                  <PentagonMotif size="sm" color="cardy-green" opacity={8} animate={false} />
                 </div>
 
-                <p className="font-body text-cardi-ink/80">
+                <p className="font-body text-cardy-ink/80">
                   {tracks.wai.focus}
                 </p>
 
                 <div className="space-y-3">
-                  <h5 className="font-body font-semibold text-cardi-ink">Key Projects:</h5>
+                  <h5 className="font-body font-semibold text-cardy-ink">Key Projects:</h5>
                   <div className="space-y-2">
                     {tracks.wai.projects.map((project, i) => (
                       <div key={i} className="flex items-center space-x-2">
-                        <div className="w-2 h-2 bg-cardi-green rounded-full" />
-                        <span className="font-caption text-cardi-ink/70">{project}</span>
+                        <div className="w-2 h-2 bg-cardy-green rounded-full" />
+                        <span className="font-caption text-cardy-ink/70">{project}</span>
                       </div>
                     ))}
                   </div>
@@ -283,8 +283,8 @@ export function Cohort2Section({ data }: Cohort2SectionProps) {
           viewport={{ once: true }}
         >
           <div className="text-center space-y-4">
-            <h3 className="font-h2 text-cardi-ink">Current Participants</h3>
-            <p className="font-body text-cardi-ink/60">
+            <h3 className="font-h2 text-cardy-ink">Current Participants</h3>
+            <p className="font-body text-cardy-ink/60">
               Meet our Cohort 2 participants and their progress
             </p>
           </div>
@@ -292,8 +292,8 @@ export function Cohort2Section({ data }: Cohort2SectionProps) {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {participants.map((participant, index) => {
               const trackColor = participant.track === 'BA'
-                ? 'from-cardi-blue to-cardi-indigo'
-                : 'from-cardi-green to-cardi-yellow'
+                ? 'from-cardy-blue to-cardy-indigo'
+                : 'from-cardy-green to-cardy-yellow'
 
               return (
                 <motion.div
@@ -316,11 +316,11 @@ export function Cohort2Section({ data }: Cohort2SectionProps) {
                         </span>
                       </div>
                       <div>
-                        <h4 className="font-body font-semibold text-cardi-ink">
+                        <h4 className="font-body font-semibold text-cardy-ink">
                           {participant.name}
                         </h4>
-                        <div className="inline-flex items-center px-2 py-1 bg-cardi-ink/5 rounded-full">
-                          <span className="text-xs font-medium text-cardi-ink/70">
+                        <div className="inline-flex items-center px-2 py-1 bg-cardy-ink/5 rounded-full">
+                          <span className="text-xs font-medium text-cardy-ink/70">
                             {participant.track} Track
                           </span>
                         </div>
@@ -329,20 +329,20 @@ export function Cohort2Section({ data }: Cohort2SectionProps) {
 
                     {/* Background */}
                     <div className="space-y-1">
-                      <h5 className="font-caption font-semibold text-cardi-ink/80 uppercase tracking-wide">
+                      <h5 className="font-caption font-semibold text-cardy-ink/80 uppercase tracking-wide">
                         Background
                       </h5>
-                      <p className="font-caption text-cardi-ink/70">
+                      <p className="font-caption text-cardy-ink/70">
                         {participant.background}
                       </p>
                     </div>
 
                     {/* Progress */}
                     <div className="space-y-1">
-                      <h5 className="font-caption font-semibold text-cardi-ink/80 uppercase tracking-wide">
+                      <h5 className="font-caption font-semibold text-cardy-ink/80 uppercase tracking-wide">
                         Current Progress
                       </h5>
-                      <p className="font-caption text-cardi-ink/70">
+                      <p className="font-caption text-cardy-ink/70">
                         {participant.progress}
                       </p>
                     </div>
@@ -361,9 +361,9 @@ export function Cohort2Section({ data }: Cohort2SectionProps) {
           transition={{ duration: 0.8, delay: 2.2 }}
           viewport={{ once: true }}
         >
-          <div className="inline-flex items-center space-x-3 px-8 py-4 bg-gradient-to-r from-cardi-yellow/10 to-cardi-orange/10 backdrop-blur-sm rounded-2xl border border-cardi-yellow/20 shadow-lg">
-            <div className="w-3 h-3 bg-gradient-to-r from-cardi-yellow to-cardi-orange rounded-full animate-pulse" />
-            <span className="font-body text-cardi-ink font-medium">
+          <div className="inline-flex items-center space-x-3 px-8 py-4 bg-gradient-to-r from-cardy-yellow/10 to-cardy-orange/10 backdrop-blur-sm rounded-2xl border border-cardy-yellow/20 shadow-lg">
+            <div className="w-3 h-3 bg-gradient-to-r from-cardy-yellow to-cardy-orange rounded-full animate-pulse" />
+            <span className="font-body text-cardy-ink font-medium">
               Curriculum enriched • Multi-track complexity • Group collaboration in action
             </span>
           </div>

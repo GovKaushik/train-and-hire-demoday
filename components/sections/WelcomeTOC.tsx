@@ -25,11 +25,11 @@ const sectionIcons = {
 }
 
 const sectionColors = {
-  about: 'from-cardi-blue to-cardi-indigo',
-  cohort1: 'from-cardi-green to-cardi-blue',
-  cohort2: 'from-cardi-yellow to-cardi-orange',
-  timeline: 'from-cardi-indigo to-cardi-red',
-  impact: 'from-cardi-green to-cardi-yellow'
+  about: 'from-cardy-blue to-cardy-indigo',
+  cohort1: 'from-cardy-green to-cardy-blue',
+  cohort2: 'from-cardy-yellow to-cardy-orange',
+  timeline: 'from-cardy-indigo to-cardy-red',
+  impact: 'from-cardy-green to-cardy-yellow'
 }
 
 export function WelcomeTOC({ title, sections, onSectionClick }: WelcomeTOCProps) {
@@ -60,7 +60,7 @@ export function WelcomeTOC({ title, sections, onSectionClick }: WelcomeTOCProps)
           viewport={{ once: true }}
         >
           <motion.h2
-            className="font-h1 text-cardi-ink"
+            className="font-h1 text-cardy-ink"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -71,7 +71,7 @@ export function WelcomeTOC({ title, sections, onSectionClick }: WelcomeTOCProps)
 
           {/* Decorative line */}
           <motion.div
-            className="w-32 h-1 bg-gradient-to-r from-cardi-red to-cardi-yellow mx-auto rounded-full"
+            className="w-32 h-1 bg-gradient-to-r from-cardy-red to-cardy-yellow mx-auto rounded-full"
             initial={{ width: 0, opacity: 0 }}
             whileInView={{ width: 128, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -79,7 +79,7 @@ export function WelcomeTOC({ title, sections, onSectionClick }: WelcomeTOCProps)
           />
 
           <motion.p
-            className="font-body text-cardi-ink/70 max-w-2xl mx-auto"
+            className="font-body text-cardy-ink/70 max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
@@ -93,7 +93,7 @@ export function WelcomeTOC({ title, sections, onSectionClick }: WelcomeTOCProps)
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {sections.map((section, index) => {
             const IconComponent = sectionIcons[section.id as keyof typeof sectionIcons] || Target
-            const gradientColor = sectionColors[section.id as keyof typeof sectionColors] || 'from-cardi-blue to-cardi-indigo'
+            const gradientColor = sectionColors[section.id as keyof typeof sectionColors] || 'from-cardy-blue to-cardy-indigo'
 
             return (
               <motion.div
@@ -110,10 +110,10 @@ export function WelcomeTOC({ title, sections, onSectionClick }: WelcomeTOCProps)
                 <motion.button
                   onClick={() => handleSectionClick(section)}
                   className={`
-                    w-full p-6 rounded-3xl border border-cardi-border/30 bg-white/80 backdrop-blur-sm
-                    hover:shadow-2xl hover:border-cardi-border/50 hover:bg-white/95
+                    w-full p-6 rounded-3xl border border-cardy-border/30 bg-white/80 backdrop-blur-sm
+                    hover:shadow-2xl hover:border-cardy-border/50 hover:bg-white/95
                     transition-all duration-300 text-left relative overflow-hidden
-                    focus:outline-none focus:ring-2 focus:ring-cardi-blue/50 focus:ring-offset-2
+                    focus:outline-none focus:ring-2 focus:ring-cardy-blue/50 focus:ring-offset-2
                   `}
                   whileHover={{
                     scale: 1.02,
@@ -136,9 +136,9 @@ export function WelcomeTOC({ title, sections, onSectionClick }: WelcomeTOCProps)
                         `}>
                           <IconComponent className="w-6 h-6" />
                         </div>
-                        <div className="flex items-center space-x-2 text-sm text-cardi-ink/50 font-medium">
+                        <div className="flex items-center space-x-2 text-sm text-cardy-ink/50 font-medium">
                           <span>Section {index + 1}</span>
-                          <div className="w-1 h-1 rounded-full bg-cardi-ink/30" />
+                          <div className="w-1 h-1 rounded-full bg-cardy-ink/30" />
                           <Clock className="w-3 h-3" />
                           <span>{section.duration}</span>
                         </div>
@@ -147,20 +147,20 @@ export function WelcomeTOC({ title, sections, onSectionClick }: WelcomeTOCProps)
                       <motion.div
                         className="opacity-50 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300"
                       >
-                        <ChevronRight className="w-5 h-5 text-cardi-ink" />
+                        <ChevronRight className="w-5 h-5 text-cardy-ink" />
                       </motion.div>
                     </div>
 
                     {/* Section title */}
                     <div>
-                      <h3 className="font-h3 text-cardi-ink group-hover:text-cardi-ink transition-colors duration-300">
+                      <h3 className="font-h3 text-cardy-ink group-hover:text-cardy-ink transition-colors duration-300">
                         {section.label}
                       </h3>
                     </div>
 
                     {/* Progress indicator */}
                     <div className="pt-2">
-                      <div className="w-full h-2 bg-cardi-border/30 rounded-full overflow-hidden">
+                      <div className="w-full h-2 bg-cardy-border/30 rounded-full overflow-hidden">
                         <motion.div
                           className={`h-full bg-gradient-to-r ${gradientColor} origin-left`}
                           initial={{ scaleX: 0 }}
@@ -194,9 +194,9 @@ export function WelcomeTOC({ title, sections, onSectionClick }: WelcomeTOCProps)
           transition={{ duration: 0.6, delay: 1.5 }}
           viewport={{ once: true }}
         >
-          <div className="inline-flex items-center space-x-3 px-6 py-3 bg-cardi-ink/5 backdrop-blur-sm rounded-2xl border border-cardi-border/20">
-            <Clock className="w-5 h-5 text-cardi-ink/60" />
-            <span className="font-medium text-cardi-ink/80">
+          <div className="inline-flex items-center space-x-3 px-6 py-3 bg-cardy-ink/5 backdrop-blur-sm rounded-2xl border border-cardy-border/20">
+            <Clock className="w-5 h-5 text-cardy-ink/60" />
+            <span className="font-medium text-cardy-ink/80">
               Total presentation time: {calculateTotalDuration(sections)}
             </span>
           </div>

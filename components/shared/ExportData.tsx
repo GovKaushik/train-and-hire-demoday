@@ -168,12 +168,12 @@ export function ExportData() {
         >
           {isExporting ? (
             <motion.div
-              className="w-6 h-6 border-2 border-cardi-blue border-t-transparent rounded-full"
+              className="w-6 h-6 border-2 border-cardy-blue border-t-transparent rounded-full"
               animate={{ rotate: 360 }}
               transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
             />
           ) : (
-            <BarChart3 className="w-6 h-6 text-cardi-ink" />
+            <BarChart3 className="w-6 h-6 text-cardy-ink" />
           )}
         </motion.button>
 
@@ -186,7 +186,7 @@ export function ExportData() {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
         >
-          <FileText className="w-6 h-6 text-cardi-ink" />
+          <FileText className="w-6 h-6 text-cardy-ink" />
         </motion.button>
       </div>
 

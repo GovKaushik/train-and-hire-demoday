@@ -71,7 +71,7 @@ export function CohortTrackShowcase({ data, sectionId }: CohortTrackShowcaseProp
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-cardi-ink mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-cardy-ink mb-6">
             {data.title}
           </h2>
 
@@ -84,7 +84,7 @@ export function CohortTrackShowcase({ data, sectionId }: CohortTrackShowcaseProp
               transition={{ delay: 0.3, type: "spring" }}
             >
               <Users className="w-5 h-5" style={{ color: sectionColor.accent }} />
-              <span className="font-semibold text-cardi-ink">{data.size} trainees</span>
+              <span className="font-semibold text-cardy-ink">{data.size} trainees</span>
             </motion.div>
 
             <motion.div
@@ -95,11 +95,11 @@ export function CohortTrackShowcase({ data, sectionId }: CohortTrackShowcaseProp
               transition={{ delay: 0.5, type: "spring" }}
             >
               <Code className="w-5 h-5" style={{ color: sectionColor.accent }} />
-              <span className="font-semibold text-cardi-ink">2 tracks</span>
+              <span className="font-semibold text-cardy-ink">2 tracks</span>
             </motion.div>
           </div>
 
-          <p className="text-lg text-cardi-slate max-w-3xl mx-auto">
+          <p className="text-lg text-cardy-slate max-w-3xl mx-auto">
             {data.notes}
           </p>
         </motion.div>
@@ -114,7 +114,7 @@ export function CohortTrackShowcase({ data, sectionId }: CohortTrackShowcaseProp
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 * index }}
             >
-              <AnimatedCard className="h-full p-6 group hover:shadow-2xl transition-all duration-500 border-t-4 border-t-cardi-blue">
+              <AnimatedCard className="h-full p-6 group hover:shadow-2xl transition-all duration-500 border-t-4 border-t-cardy-blue">
                 {/* Track Header */}
                 <div className="text-center mb-6">
                   <motion.div
@@ -126,10 +126,10 @@ export function CohortTrackShowcase({ data, sectionId }: CohortTrackShowcaseProp
                     <track.icon className="w-8 h-8 text-white" />
                   </motion.div>
 
-                  <h3 className="text-xl font-bold text-cardi-ink mb-2">
+                  <h3 className="text-xl font-bold text-cardy-ink mb-2">
                     {track.name}
                   </h3>
-                  <p className="text-sm text-cardi-slate leading-relaxed">
+                  <p className="text-sm text-cardy-slate leading-relaxed">
                     {track.description}
                   </p>
                 </div>
@@ -149,7 +149,7 @@ export function CohortTrackShowcase({ data, sectionId }: CohortTrackShowcaseProp
                         className="w-2 h-2 rounded-full flex-shrink-0"
                         style={{ backgroundColor: track.color }}
                       />
-                      <span className="text-sm font-medium text-cardi-slate">
+                      <span className="text-sm font-medium text-cardy-slate">
                         {feature}
                       </span>
                     </motion.div>
@@ -164,10 +164,10 @@ export function CohortTrackShowcase({ data, sectionId }: CohortTrackShowcaseProp
                   viewport={{ once: true }}
                   transition={{ delay: 0.5 + (index * 0.1) }}
                 >
-                  <div className="text-xs font-medium text-cardi-slate mb-1">
+                  <div className="text-xs font-medium text-cardy-slate mb-1">
                     OUTCOME
                   </div>
-                  <div className="text-sm font-bold text-cardi-ink">
+                  <div className="text-sm font-bold text-cardy-ink">
                     {track.outcomes}
                   </div>
                 </motion.div>
@@ -184,7 +184,7 @@ export function CohortTrackShowcase({ data, sectionId }: CohortTrackShowcaseProp
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          <h3 className="text-xl font-semibold text-cardi-ink mb-6">
+          <h3 className="text-xl font-semibold text-cardy-ink mb-6">
             Program Enhancements
           </h3>
 
@@ -204,7 +204,7 @@ export function CohortTrackShowcase({ data, sectionId }: CohortTrackShowcaseProp
                 whileHover={{ scale: 1.05 }}
               >
                 <ArrowRight className="w-4 h-4" style={{ color: sectionColor.accent }} />
-                <span className="text-sm font-medium text-cardi-ink group-hover:text-cardi-ink/80">
+                <span className="text-sm font-medium text-cardy-ink group-hover:text-cardy-ink/80">
                   {improvement}
                 </span>
               </motion.div>

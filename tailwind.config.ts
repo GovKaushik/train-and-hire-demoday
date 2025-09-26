@@ -9,18 +9,45 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        cardi: {
-          ink: '#0B0B0C',
-          cloud: '#F8FAFC',
-          border: '#E5E7EB',
-          red: '#E11D48',
-          orange: '#FB923C',
-          yellow: '#F59E0B',
-          green: '#10B981',
-          blue: '#3B82F6',
-          indigo: '#6366F1',
-          slate: '#64748B',
-        }
+        cardy: {
+          ink: "var(--cardy-ink)",
+          cloud: "var(--cardy-cloud)",
+          border: "var(--cardy-border)",
+          red: "var(--cardy-red)",
+          orange: "var(--cardy-orange)",
+          yellow: "var(--cardy-yellow)",
+          green: "var(--cardy-green)",
+          blue: "var(--cardy-blue)",
+          indigo: "var(--cardy-indigo)",
+          purple: "var(--cardy-purple)",
+          pink: "var(--cardy-pink)",
+        },
+        track: {
+          waiStart: "var(--cardy-wai-start)",
+          waiEnd: "var(--cardy-wai-end)",
+          baStart: "var(--cardy-ba-start)",
+          baEnd: "var(--cardy-ba-end)",
+        },
+      },
+      backgroundImage: {
+        "cardy-brand-sweep": "var(--cardy-brand-sweep)",
+      },
+      transitionTimingFunction: {
+        cardy: "var(--cardy-ease)",
+      },
+      transitionDuration: {
+        cardySm: "var(--cardy-dur-sm)",
+        cardyMd: "var(--cardy-dur-md)",
+        cardyLg: "var(--cardy-dur-lg)",
+      },
+      boxShadow: {
+        frosted: "0 24px 60px -24px rgba(0,0,0,.25)",
+      },
+      borderRadius: {
+        plate: "24px",
+      },
+      backdropBlur: {
+        xs: "2px",
       },
       fontFamily: {
         display: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],

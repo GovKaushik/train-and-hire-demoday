@@ -49,7 +49,7 @@ export function JudgeAuth({ onAuthenticated }: JudgeAuthProps) {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-cardi-ink via-gray-900 to-cardi-ink flex items-center justify-center p-8">
+    <div className="min-h-screen bg-gradient-to-br from-cardy-ink via-gray-900 to-cardy-ink flex items-center justify-center p-8">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0"
@@ -67,7 +67,7 @@ export function JudgeAuth({ onAuthenticated }: JudgeAuthProps) {
         transition={{ type: "spring", damping: 20 }}
       >
         {/* Header */}
-        <div className="bg-gradient-to-r from-cardi-blue to-cardi-green p-8 text-white text-center">
+        <div className="bg-gradient-to-r from-cardy-blue to-cardy-green p-8 text-white text-center">
           <motion.div
             className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-4"
             whileHover={{ scale: 1.1, rotate: 5 }}
@@ -83,7 +83,7 @@ export function JudgeAuth({ onAuthenticated }: JudgeAuthProps) {
         <div className="p-8">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <label className="block text-sm font-semibold text-cardi-ink mb-3">
+              <label className="block text-sm font-semibold text-cardy-ink mb-3">
                 <Key className="w-4 h-4 inline mr-2" />
                 Judge Token
               </label>
@@ -93,7 +93,7 @@ export function JudgeAuth({ onAuthenticated }: JudgeAuthProps) {
                   value={token}
                   onChange={(e) => setToken(e.target.value)}
                   placeholder="Enter your judge token"
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-cardi-blue focus:outline-none transition-colors text-lg font-mono tracking-wider"
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-cardy-blue focus:outline-none transition-colors text-lg font-mono tracking-wider"
                   disabled={isLoading}
                   autoComplete="off"
                 />
@@ -104,7 +104,7 @@ export function JudgeAuth({ onAuthenticated }: JudgeAuthProps) {
                     animate={{ scale: 1 }}
                     transition={{ type: "spring" }}
                   >
-                    <CheckCircle className="w-5 h-5 text-cardi-green" />
+                    <CheckCircle className="w-5 h-5 text-cardy-green" />
                   </motion.div>
                 )}
               </div>
@@ -127,7 +127,7 @@ export function JudgeAuth({ onAuthenticated }: JudgeAuthProps) {
             <motion.button
               type="submit"
               disabled={!token.trim() || isLoading}
-              className="w-full bg-gradient-to-r from-cardi-blue to-cardi-green text-white py-3 px-6 rounded-xl font-semibold disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl transition-all"
+              className="w-full bg-gradient-to-r from-cardy-blue to-cardy-green text-white py-3 px-6 rounded-xl font-semibold disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl transition-all"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
@@ -150,7 +150,7 @@ export function JudgeAuth({ onAuthenticated }: JudgeAuthProps) {
           <div className="mt-8 pt-6 border-t border-gray-200">
             <button
               onClick={() => setShowHint(!showHint)}
-              className="text-sm text-cardi-slate hover:text-cardi-ink transition-colors flex items-center space-x-2"
+              className="text-sm text-cardy-slate hover:text-cardy-ink transition-colors flex items-center space-x-2"
             >
               <Sparkles className="w-4 h-4" />
               <span>Need a demo token?</span>

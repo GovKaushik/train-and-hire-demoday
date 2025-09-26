@@ -1,14 +1,14 @@
 {
   "presentation": {
     "meta": {
-      "title": "Cardi Demo Day Finale Cohort 2, 2025",
+      "title": "Cardy Demo Day Finale Cohort 2, 2025",
       "subtitle": "Highlighting the growing nature of Train & Hire as a workforce development asset",
       "duration": "5-7 minutes",
       "sections": ["hero", "toc", "about", "cohort1", "cohort2", "timeline", "impact"],
-      "theme": "cardi-professional"
+      "theme": "cardy-professional"
     },
     "hero": {
-      "headline": "Cardi Demo Day Finale Cohort 2, 2025",
+      "headline": "Cardy Demo Day Finale Cohort 2, 2025",
       "subline": "Highlighting the growing nature of Train & Hire as a workforce development asset",
       "backgroundVideo": "/assets/hero-bg.mp4",
       "backgroundPoster": "/assets/hero-poster.jpg"
@@ -91,7 +91,7 @@
           "name": "Chris",
           "track": "BA",
           "photo": "/assets/people/chris.jpg",
-          "outcome": "Intern @ Cardi AI",
+          "outcome": "Intern @ Cardy AI",
           "story": "From non-tech background to shipping real tickets in production systems.",
           "artifacts": ["BPD", "Feature Request", "User Story"]
         },
@@ -322,7 +322,7 @@
         {
           "quote": "Train & Hire gave me the structure and confidence I needed to transition into tech. The mentorship was invaluable.",
           "author": "Chris, Cohort 1 Graduate",
-          "role": "Now Business Analyst Intern @ Cardi AI"
+          "role": "Now Business Analyst Intern @ Cardy AI"
         },
         {
           "quote": "The program doesn't just teach skills - it builds professional identity. I feel prepared for the corporate world.",

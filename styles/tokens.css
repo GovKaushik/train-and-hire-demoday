@@ -1,0 +1,32 @@
+:root {
+  /* Core Cardy Design Tokens */
+  --cardy-ink: #0B0B0C;
+  --cardy-cloud: #F8FAFC;
+  --cardy-border: #E5E7EB;
+
+  /* Cardy Pentagon Palette */
+  --cardy-red: #E11D48;
+  --cardy-orange: #FB923C;
+  --cardy-yellow: #F59E0B;
+  --cardy-green: #10B981;
+  --cardy-blue: #3B82F6;
+  --cardy-indigo: #6366F1;
+
+  /* Track Accents */
+  --cardy-wai-start: var(--cardy-green);
+  --cardy-wai-end: var(--cardy-yellow);
+  --cardy-ba-start: var(--cardy-blue);
+  --cardy-ba-end: var(--cardy-indigo);
+
+  /* Gradients */
+  --cardy-brand-sweep: linear-gradient(45deg,
+    var(--cardy-red), var(--cardy-yellow),
+    var(--cardy-green), var(--cardy-blue));
+
+  /* Motion System */
+  --cardy-ease: cubic-bezier(0.22,0.61,0.36,1);
+  --cardy-dur-sm: 180ms;
+  --cardy-dur-md: 360ms;
+  --cardy-dur-lg: 720ms;
+
+}

@@ -46,7 +46,7 @@ export function HeroSection({
 
           {/* Video overlay for text readability */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/30" />
-          <div className="absolute inset-0 bg-gradient-to-t from-cardi-cloud/10 via-transparent to-cardi-cloud/20" />
+          <div className="absolute inset-0 bg-gradient-to-t from-cardy-cloud/10 via-transparent to-cardy-cloud/20" />
         </div>
       )}
 
@@ -80,7 +80,7 @@ export function HeroSection({
             {/* Headline text */}
             <div className="relative px-12 py-16 md:px-20 md:py-20">
               <motion.h1
-                className="font-display text-cardi-ink leading-none tracking-tight"
+                className="font-display text-cardy-ink leading-none tracking-tight"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
@@ -102,7 +102,7 @@ export function HeroSection({
               >
                 <PentagonMotif
                   size="md"
-                  color="cardi-red"
+                  color="cardy-red"
                   opacity={15}
                   animate={false}
                 />
@@ -117,9 +117,9 @@ export function HeroSection({
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 1.0 }}
           >
-            <div className="w-48 h-1.5 rounded-full overflow-hidden bg-cardi-border/50 shadow-sm">
+            <div className="w-48 h-1.5 rounded-full overflow-hidden bg-cardy-border/50 shadow-sm">
               <motion.div
-                className="h-full bg-gradient-to-r from-cardi-red via-cardi-yellow to-cardi-green"
+                className="h-full bg-gradient-to-r from-cardy-red via-cardy-yellow to-cardy-green"
                 initial={{ x: '-100%' }}
                 animate={{ x: '100%' }}
                 transition={{
@@ -144,7 +144,7 @@ export function HeroSection({
           <div className="relative">
             {/* Subline background */}
             <motion.div
-              className="absolute inset-0 bg-cardi-ink/5 backdrop-blur-sm rounded-2xl border border-cardi-border/20"
+              className="absolute inset-0 bg-cardy-ink/5 backdrop-blur-sm rounded-2xl border border-cardy-border/20"
               initial={{ scale: 0.98, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.6, delay: 1.9 }}
@@ -152,7 +152,7 @@ export function HeroSection({
 
             {/* Subline text */}
             <div className="relative px-8 py-6 md:px-12 md:py-8">
-              <h2 className="font-h2 text-cardi-ink/90 leading-tight">
+              <h2 className="font-h2 text-cardy-ink/90 leading-tight">
                 {subline}
               </h2>
             </div>
@@ -175,9 +175,9 @@ export function HeroSection({
               ease: "easeInOut"
             }}
           >
-            <div className="w-8 h-12 border-2 border-cardi-ink/30 rounded-full flex justify-center">
+            <div className="w-8 h-12 border-2 border-cardy-ink/30 rounded-full flex justify-center">
               <motion.div
-                className="w-1.5 h-3 bg-cardi-ink/40 rounded-full mt-2"
+                className="w-1.5 h-3 bg-cardy-ink/40 rounded-full mt-2"
                 animate={{
                   opacity: [0.3, 1, 0.3],
                   scale: [1, 1.2, 1]
@@ -189,7 +189,7 @@ export function HeroSection({
                 }}
               />
             </div>
-            <span className="text-sm text-cardi-ink/50 font-medium">Scroll to explore</span>
+            <span className="text-sm text-cardy-ink/50 font-medium">Scroll to explore</span>
           </motion.div>
         </motion.div>
       </div>
@@ -203,7 +203,7 @@ export function HeroSection({
         >
           <PentagonMotif
             size="sm"
-            color="cardi-blue"
+            color="cardy-blue"
             opacity={8}
             animate={true}
           />
@@ -218,7 +218,7 @@ export function HeroSection({
         >
           <PentagonMotif
             size="sm"
-            color="cardi-green"
+            color="cardy-green"
             opacity={8}
             animate={true}
           />

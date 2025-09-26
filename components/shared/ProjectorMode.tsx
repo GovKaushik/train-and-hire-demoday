@@ -44,8 +44,8 @@ export function ProjectorMode() {
         className={cn(
           'fixed top-6 right-6 w-14 h-14 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 z-50 border border-white/20',
           isProjectorMode
-            ? 'bg-cardi-ink text-white'
-            : 'bg-white/90 backdrop-blur-xl text-cardi-ink hover:bg-white hover:scale-110'
+            ? 'bg-cardy-ink text-white'
+            : 'bg-white/90 backdrop-blur-xl text-cardy-ink hover:bg-white hover:scale-110'
         )}
         whileHover={!isProjectorMode ? { scale: 1.1 } : { scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
@@ -83,7 +83,7 @@ export function ProjectorMode() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="fixed top-24 right-6 bg-cardi-ink text-white px-4 py-2 rounded-full text-sm font-medium shadow-lg z-50"
+            className="fixed top-24 right-6 bg-cardy-ink text-white px-4 py-2 rounded-full text-sm font-medium shadow-lg z-50"
           >
             Projector Mode Active
           </motion.div>
