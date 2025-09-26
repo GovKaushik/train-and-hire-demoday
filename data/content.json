@@ -1,0 +1,363 @@
+{
+  "presentation": {
+    "meta": {
+      "title": "Cardi Demo Day Finale Cohort 2, 2025",
+      "subtitle": "Highlighting the growing nature of Train & Hire as a workforce development asset",
+      "duration": "5-7 minutes",
+      "sections": ["hero", "toc", "about", "cohort1", "cohort2", "timeline", "impact"],
+      "theme": "cardi-professional"
+    },
+    "hero": {
+      "headline": "Cardi Demo Day Finale Cohort 2, 2025",
+      "subline": "Highlighting the growing nature of Train & Hire as a workforce development asset",
+      "backgroundVideo": "/assets/hero-bg.mp4",
+      "backgroundPoster": "/assets/hero-poster.jpg"
+    },
+    "toc": {
+      "title": "What We'll Cover",
+      "sections": [
+        {
+          "id": "about",
+          "label": "About Train & Hire",
+          "duration": "45s",
+          "anchor": "#about"
+        },
+        {
+          "id": "cohort1",
+          "label": "Cohort 1 Results",
+          "duration": "60s",
+          "anchor": "#cohort1"
+        },
+        {
+          "id": "cohort2",
+          "label": "Cohort 2 Progress",
+          "duration": "90s",
+          "anchor": "#cohort2"
+        },
+        {
+          "id": "timeline",
+          "label": "Interactive Timeline",
+          "duration": "120s",
+          "anchor": "#timeline"
+        },
+        {
+          "id": "impact",
+          "label": "Growing Impact",
+          "duration": "45s",
+          "anchor": "#impact"
+        }
+      ]
+    },
+    "about": {
+      "title": "Train & Hire",
+      "subtitle": "A workforce development asset",
+      "mission": "Enable capable individuals from non-tech backgrounds to build confident, durable careers in the corporate world — gritty, job-ready, and supported.",
+      "approach": "Talent is everywhere. Opportunity isn't. Train & Hire accelerates the journey from potential to placement — with structure, mentorship, and real project context.",
+      "features": [
+        {
+          "icon": "target",
+          "title": "Structured Learning",
+          "description": "8-week intensive program with clear milestones"
+        },
+        {
+          "icon": "users",
+          "title": "Real Mentorship",
+          "description": "Industry professionals guide every step"
+        },
+        {
+          "icon": "briefcase",
+          "title": "Project Context",
+          "description": "Work on actual business requirements"
+        },
+        {
+          "icon": "trending-up",
+          "title": "Placement Pipeline",
+          "description": "6-month internship to full-time pathway"
+        }
+      ]
+    },
+    "cohort1": {
+      "title": "Cohort 1",
+      "subtitle": "Humble Beginnings",
+      "stats": {
+        "started": 5,
+        "completed": 4,
+        "retention": "80%",
+        "placement": "100%"
+      },
+      "description": "Our pilot program grew with the trainees. While 1 participant exited early, 4 persevered through the full journey, proving the model's viability.",
+      "graduates": [
+        {
+          "name": "Chris",
+          "track": "BA",
+          "photo": "/assets/people/chris.jpg",
+          "outcome": "Intern @ Cardi AI",
+          "story": "From non-tech background to shipping real tickets in production systems.",
+          "artifacts": ["BPD", "Feature Request", "User Story"]
+        },
+        {
+          "name": "Winnie",
+          "track": "BA",
+          "photo": "/assets/people/winnie.jpg",
+          "outcome": "Corporate Offer (Army Path)",
+          "story": "Found professional confidence through demo presentations and technical writing.",
+          "artifacts": ["Process Documentation", "Demo Deck", "Requirements Doc"]
+        },
+        {
+          "name": "Jordan",
+          "track": "BA",
+          "photo": "/assets/people/jordan.jpg",
+          "outcome": "Junior Analyst Role",
+          "story": "Transitioned from retail to corporate environment with systematic approach.",
+          "artifacts": ["Business Analysis", "Workflow Design", "Stakeholder Maps"]
+        },
+        {
+          "name": "Alex",
+          "track": "BA",
+          "photo": "/assets/people/alex.jpg",
+          "outcome": "Process Improvement Specialist",
+          "story": "Leveraged analytical background to streamline business operations.",
+          "artifacts": ["Process Maps", "Efficiency Reports", "Automation Specs"]
+        }
+      ]
+    },
+    "cohort2": {
+      "title": "Cohort 2",
+      "subtitle": "Finding Our Footing",
+      "stats": {
+        "started": 6,
+        "active": 6,
+        "retention": "100%",
+        "completion": "In Progress"
+      },
+      "description": "Younger cohort of new graduates with expanded curriculum. Added Workplace AI (WAI) track alongside Business Analysis, creating multi-disciplinary learning environment.",
+      "improvements": [
+        "Richer curriculum with dual tracks",
+        "Group collaboration projects",
+        "Regular demo day presentations",
+        "Multi-track administrative complexity"
+      ],
+      "tracks": {
+        "ba": {
+          "name": "Business Analysis",
+          "participants": 4,
+          "focus": "Requirements gathering, process documentation, stakeholder management",
+          "projects": ["Customer Intake Flow", "Feature Prioritization Matrix", "User Journey Maps"]
+        },
+        "wai": {
+          "name": "Workplace AI",
+          "participants": 2,
+          "focus": "AI automation, workflow optimization, prompt engineering",
+          "projects": ["Jira Auto-Author", "Meeting Summarizer", "Document Classifier"]
+        }
+      },
+      "participants": [
+        {
+          "name": "Sarah",
+          "track": "BA",
+          "photo": "/assets/people/sarah.jpg",
+          "background": "Psychology degree, career gap",
+          "progress": "Mastered BPD creation, leading group project"
+        },
+        {
+          "name": "Marcus",
+          "track": "WAI",
+          "photo": "/assets/people/marcus.jpg",
+          "background": "Retail management, self-taught coding",
+          "progress": "Built Chrome extension for workflow automation"
+        },
+        {
+          "name": "Elena",
+          "track": "BA",
+          "photo": "/assets/people/elena.jpg",
+          "background": "Recent graduate, economics major",
+          "progress": "Excelling at stakeholder interviews and documentation"
+        },
+        {
+          "name": "David",
+          "track": "WAI",
+          "photo": "/assets/people/david.jpg",
+          "background": "Liberal arts, interested in AI applications",
+          "progress": "Developing NLP tools for business process automation"
+        },
+        {
+          "name": "Maya",
+          "track": "BA",
+          "photo": "/assets/people/maya.jpg",
+          "background": "Marketing background, analytical mindset",
+          "progress": "Creating comprehensive user personas and journey maps"
+        },
+        {
+          "name": "James",
+          "track": "BA",
+          "photo": "/assets/people/james.jpg",
+          "background": "Operations experience, process optimization focus",
+          "progress": "Designing efficient workflows and quality assurance processes"
+        }
+      ]
+    },
+    "timeline": {
+      "title": "8-Week Journey",
+      "subtitle": "From potential to placement",
+      "structure": "dual-track",
+      "weeks": [
+        {
+          "week": 1,
+          "theme": "Foundation",
+          "ba": {
+            "title": "BA Fundamentals",
+            "topics": ["Requirements gathering", "Stakeholder identification", "Documentation basics"],
+            "deliverable": "Stakeholder map",
+            "modal": "week1-ba"
+          },
+          "wai": {
+            "title": "AI Landscape",
+            "topics": ["Workplace AI overview", "Automation opportunities", "Tool evaluation"],
+            "deliverable": "AI opportunity assessment",
+            "modal": "week1-wai"
+          }
+        },
+        {
+          "week": 2,
+          "theme": "Skills Building",
+          "ba": {
+            "title": "Process Documentation",
+            "topics": ["BPD creation", "Workflow mapping", "Edge case identification"],
+            "deliverable": "Business process diagram",
+            "modal": "week2-ba"
+          },
+          "wai": {
+            "title": "Prompt Engineering",
+            "topics": ["LLM interaction", "Prompt optimization", "Context management"],
+            "deliverable": "Prompt library",
+            "modal": "week2-wai"
+          }
+        },
+        {
+          "week": 3,
+          "theme": "Application",
+          "ba": {
+            "title": "Requirements Engineering",
+            "topics": ["Feature requests", "Acceptance criteria", "User story writing"],
+            "deliverable": "Feature requirement document",
+            "modal": "week3-ba"
+          },
+          "wai": {
+            "title": "Automation Design",
+            "topics": ["Workflow automation", "Integration planning", "Error handling"],
+            "deliverable": "Automation blueprint",
+            "modal": "week3-wai"
+          }
+        },
+        {
+          "week": 4,
+          "theme": "Professional Skills",
+          "ba": {
+            "title": "Stakeholder Management",
+            "topics": ["Communication strategies", "Meeting facilitation", "Conflict resolution"],
+            "deliverable": "Stakeholder communication plan",
+            "modal": "week4-ba"
+          },
+          "wai": {
+            "title": "Implementation Strategy",
+            "topics": ["Deployment planning", "Change management", "User adoption"],
+            "deliverable": "Implementation roadmap",
+            "modal": "week4-wai"
+          }
+        },
+        {
+          "week": 5,
+          "theme": "Collaboration",
+          "shared": {
+            "title": "Group Projects Begin",
+            "topics": ["Cross-functional teams", "Project planning", "Agile practices"],
+            "deliverable": "Project charter",
+            "modal": "week5-shared"
+          }
+        },
+        {
+          "week": 6,
+          "theme": "Presentation",
+          "shared": {
+            "title": "Demo Preparation",
+            "topics": ["Presentation skills", "Storytelling", "Technical communication"],
+            "deliverable": "Demo script and materials",
+            "modal": "week6-shared"
+          }
+        },
+        {
+          "week": 7,
+          "theme": "Practice",
+          "shared": {
+            "title": "Dry Runs",
+            "topics": ["Rehearsal sessions", "Feedback integration", "Performance optimization"],
+            "deliverable": "Refined demo presentation",
+            "modal": "week7-shared"
+          }
+        },
+        {
+          "week": 8,
+          "theme": "Showcase",
+          "shared": {
+            "title": "Final Demos",
+            "topics": ["Public presentation", "Stakeholder Q&A", "Portfolio completion"],
+            "deliverable": "Professional portfolio",
+            "modal": "week8-shared"
+          }
+        }
+      ]
+    },
+    "impact": {
+      "title": "Growing Impact",
+      "subtitle": "Train & Hire as workforce development asset",
+      "metrics": {
+        "totalGraduates": 10,
+        "placementRate": "90%",
+        "retentionRate": "85%",
+        "programGrowth": "100%",
+        "mentorHours": 240,
+        "projectsCompleted": 18
+      },
+      "testimonials": [
+        {
+          "quote": "Train & Hire gave me the structure and confidence I needed to transition into tech. The mentorship was invaluable.",
+          "author": "Chris, Cohort 1 Graduate",
+          "role": "Now Business Analyst Intern @ Cardi AI"
+        },
+        {
+          "quote": "The program doesn't just teach skills - it builds professional identity. I feel prepared for the corporate world.",
+          "author": "Winnie, Cohort 1 Graduate",
+          "role": "Pursuing Corporate Role in Federal Sector"
+        }
+      ],
+      "future": {
+        "cohort3": "Planning Q2 2025 launch",
+        "expansion": "Exploring partnerships with local universities",
+        "tracks": "Considering DevOps and Data Analysis tracks",
+        "scale": "Target 12-15 participants per cohort"
+      }
+    }
+  },
+  "modals": {
+    "week1-ba": {
+      "title": "Week 1: BA Fundamentals",
+      "content": "Foundation week focused on understanding the business analyst role and core competencies.",
+      "details": ["Stakeholder identification techniques", "Requirements elicitation methods", "Documentation standards"],
+      "artifact": {
+        "type": "image",
+        "url": "/assets/artifacts/week1-stakeholder-map.png",
+        "caption": "Sample stakeholder map created during Week 1 exercises"
+      }
+    },
+    "week1-wai": {
+      "title": "Week 1: AI Landscape",
+      "content": "Introduction to workplace AI applications and automation opportunities.",
+      "details": ["Current AI tools in business", "Automation potential assessment", "ROI evaluation frameworks"],
+      "artifact": {
+        "type": "document",
+        "url": "/assets/artifacts/week1-ai-assessment.pdf",
+        "caption": "AI opportunity assessment template"
+      }
+    }
+  }
+}
