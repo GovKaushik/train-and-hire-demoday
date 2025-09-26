@@ -83,7 +83,7 @@ export default function RatePage() {
 
   if (submitted) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-cardi-cloud via-white to-green-50 flex items-center justify-center p-8">
+      <div className="min-h-screen bg-gradient-to-br from-cardy-cloud via-white to-green-50 flex items-center justify-center p-8">
         <motion.div
           initial={{ scale: 0, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
@@ -101,7 +101,7 @@ export default function RatePage() {
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.4 }}
-            className="text-3xl font-bold text-cardi-ink mb-2"
+            className="text-3xl font-bold text-cardy-ink mb-2"
           >
             Thank you for your rating!
           </motion.h1>
@@ -109,7 +109,7 @@ export default function RatePage() {
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.6 }}
-            className="text-cardi-slate"
+            className="text-cardy-slate"
           >
             Your feedback has been recorded successfully.
           </motion.p>
@@ -119,7 +119,7 @@ export default function RatePage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-cardi-cloud via-white to-blue-50 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-cardy-cloud via-white to-blue-50 flex items-center justify-center p-4">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -131,14 +131,14 @@ export default function RatePage() {
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ type: "spring", damping: 15, delay: 0.2 }}
-              className="w-16 h-16 bg-gradient-to-br from-cardi-blue to-blue-600 rounded-2xl mx-auto mb-4 flex items-center justify-center shadow-xl"
+              className="w-16 h-16 bg-gradient-to-br from-cardy-blue to-blue-600 rounded-2xl mx-auto mb-4 flex items-center justify-center shadow-xl"
             >
               <Award className="w-8 h-8 text-white" />
             </motion.div>
-            <h1 className="text-4xl font-bold text-cardi-ink mb-2">
+            <h1 className="text-4xl font-bold text-cardy-ink mb-2">
               Judge Rating System
             </h1>
-            <p className="text-lg text-cardi-slate mb-4">
+            <p className="text-lg text-cardy-slate mb-4">
               Rate the demo teams on their performance
             </p>
 
@@ -163,7 +163,7 @@ export default function RatePage() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.3 }}
             >
-              <label className="block text-sm font-semibold text-cardi-ink mb-3 flex items-center">
+              <label className="block text-sm font-semibold text-cardy-ink mb-3 flex items-center">
                 <User className="w-4 h-4 mr-2" />
                 Your Name
               </label>
@@ -173,7 +173,7 @@ export default function RatePage() {
                 value={formData.judgeName}
                 onChange={(e) => setFormData({ ...formData, judgeName: e.target.value })}
                 placeholder="Enter your name"
-                className="w-full px-6 py-4 border-2 border-gray-200 rounded-2xl focus:outline-none focus:border-cardi-blue focus:ring-4 focus:ring-cardi-blue/20 transition-all duration-300 text-lg font-medium bg-white/50 backdrop-blur-sm"
+                className="w-full px-6 py-4 border-2 border-gray-200 rounded-2xl focus:outline-none focus:border-cardy-blue focus:ring-4 focus:ring-cardy-blue/20 transition-all duration-300 text-lg font-medium bg-white/50 backdrop-blur-sm"
               />
             </motion.div>
 
@@ -183,7 +183,7 @@ export default function RatePage() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.4 }}
             >
-              <label className="block text-sm font-semibold text-cardi-ink mb-4">
+              <label className="block text-sm font-semibold text-cardy-ink mb-4">
                 Select Track to Rate
               </label>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -213,7 +213,7 @@ export default function RatePage() {
                       className={cn(
                         'p-6 rounded-2xl border-2 transition-all duration-300 text-left relative overflow-hidden',
                         isSelected
-                          ? 'border-cardi-blue bg-cardi-blue/10 shadow-lg scale-105'
+                          ? 'border-cardy-blue bg-cardy-blue/10 shadow-lg scale-105'
                           : 'border-gray-200 bg-white/50 hover:border-gray-300 hover:scale-105 hover:shadow-md'
                       )}
                       whileHover={{ scale: 1.02 }}
@@ -227,10 +227,10 @@ export default function RatePage() {
                           <Icon className="w-6 h-6 text-white" />
                         </div>
                         <div>
-                          <h3 className="font-semibold text-lg text-cardi-ink">
+                          <h3 className="font-semibold text-lg text-cardy-ink">
                             {track.title}
                           </h3>
-                          <p className="text-sm text-cardi-slate">
+                          <p className="text-sm text-cardy-slate">
                             {track.subtitle}
                           </p>
                         </div>
@@ -239,7 +239,7 @@ export default function RatePage() {
                         <motion.div
                           initial={{ scale: 0 }}
                           animate={{ scale: 1 }}
-                          className="absolute top-4 right-4 w-6 h-6 bg-cardi-blue rounded-full flex items-center justify-center"
+                          className="absolute top-4 right-4 w-6 h-6 bg-cardy-blue rounded-full flex items-center justify-center"
                         >
                           <CheckCircle2 className="w-4 h-4 text-white" />
                         </motion.div>
@@ -259,10 +259,10 @@ export default function RatePage() {
                 className="space-y-8"
               >
                 <div className="text-center">
-                  <h3 className="text-2xl font-bold text-cardi-ink mb-2">
+                  <h3 className="text-2xl font-bold text-cardy-ink mb-2">
                     Rate the {formData.track} Team
                   </h3>
-                  <p className="text-cardi-slate">
+                  <p className="text-cardy-slate">
                     Click the stars to rate each category
                   </p>
                 </div>
@@ -310,7 +310,7 @@ export default function RatePage() {
                 className={cn(
                   'w-full py-4 rounded-2xl font-semibold text-lg transition-all duration-300 flex items-center justify-center space-x-2',
                   isValid && !isSubmitting
-                    ? 'bg-gradient-to-r from-cardi-ink to-gray-800 text-white hover:shadow-2xl hover:scale-105 shadow-xl'
+                    ? 'bg-gradient-to-r from-cardy-ink to-gray-800 text-white hover:shadow-2xl hover:scale-105 shadow-xl'
                     : 'bg-gray-200 text-gray-400 cursor-not-allowed'
                 )}
               >

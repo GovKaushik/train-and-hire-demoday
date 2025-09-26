@@ -28,18 +28,18 @@ export function GlobalBackground({
 
   // Background gradient variants
   const gradientVariants = {
-    hero: 'bg-gradient-to-br from-cardi-cloud via-white to-blue-50',
-    content: 'bg-gradient-to-b from-cardi-cloud via-white to-cardi-cloud/50',
-    timeline: 'bg-gradient-to-tr from-cardi-cloud via-white/90 to-indigo-50/70',
-    impact: 'bg-gradient-to-bl from-green-50/50 via-white to-cardi-cloud'
+    hero: 'bg-gradient-to-br from-cardy-cloud via-white to-blue-50',
+    content: 'bg-gradient-to-b from-cardy-cloud via-white to-cardy-cloud/50',
+    timeline: 'bg-gradient-to-tr from-cardy-cloud via-white/90 to-indigo-50/70',
+    impact: 'bg-gradient-to-bl from-green-50/50 via-white to-cardy-cloud'
   }
 
   // Pentagon color variants based on section
   const pentagonColors = {
-    hero: 'text-cardi-ink/10',
-    content: 'text-cardi-blue/8',
-    timeline: 'text-cardi-indigo/12',
-    impact: 'text-cardi-green/10'
+    hero: 'text-cardy-ink/10',
+    content: 'text-cardy-blue/8',
+    timeline: 'text-cardy-indigo/12',
+    impact: 'text-cardy-green/10'
   }
 
   return (
@@ -56,10 +56,10 @@ export function GlobalBackground({
             style={{
               background: `linear-gradient(
                 ${variant === 'hero' ? '45deg' : '180deg'},
-                var(--cardi-cloud) 0%,
+                var(--cardy-cloud) 0%,
                 transparent 30%,
                 transparent 70%,
-                var(--cardi-cloud) 100%
+                var(--cardy-cloud) 100%
               )`,
               y: gradientY
             }}
@@ -71,7 +71,7 @@ export function GlobalBackground({
           {/* Floating color accents */}
           <div className="absolute inset-0 overflow-hidden">
             <motion.div
-              className="absolute -top-40 -left-40 w-80 h-80 rounded-full bg-cardi-blue/5 blur-3xl"
+              className="absolute -top-40 -left-40 w-80 h-80 rounded-full bg-cardy-blue/5 blur-3xl"
               animate={{
                 x: [0, 30, 0],
                 y: [0, -20, 0],
@@ -84,7 +84,7 @@ export function GlobalBackground({
               }}
             />
             <motion.div
-              className="absolute -bottom-40 -right-40 w-96 h-96 rounded-full bg-cardi-green/4 blur-3xl"
+              className="absolute -bottom-40 -right-40 w-96 h-96 rounded-full bg-cardy-green/4 blur-3xl"
               animate={{
                 x: [0, -25, 0],
                 y: [0, 15, 0],
@@ -98,7 +98,7 @@ export function GlobalBackground({
               }}
             />
             <motion.div
-              className="absolute top-1/3 right-1/4 w-64 h-64 rounded-full bg-cardi-yellow/3 blur-3xl"
+              className="absolute top-1/3 right-1/4 w-64 h-64 rounded-full bg-cardy-yellow/3 blur-3xl"
               animate={{
                 x: [0, 20, 0],
                 y: [0, -30, 0],
@@ -188,7 +188,7 @@ export function GlobalBackground({
             className="absolute inset-0 opacity-[0.02]"
             style={{
               backgroundImage: `
-                radial-gradient(circle at 1px 1px, var(--cardi-ink) 1px, transparent 0)
+                radial-gradient(circle at 1px 1px, var(--cardy-ink) 1px, transparent 0)
               `,
               backgroundSize: '32px 32px'
             }}
@@ -202,7 +202,7 @@ export function GlobalBackground({
 // Pentagon motif component for individual use
 export function PentagonMotif({
   size = 'md',
-  color = 'cardi-ink',
+  color = 'cardy-ink',
   opacity = 10,
   animate = true,
   className = ''

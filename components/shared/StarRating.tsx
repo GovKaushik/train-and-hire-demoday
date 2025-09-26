@@ -39,9 +39,9 @@ export function StarRating({
   return (
     <div className="space-y-3">
       {label && (
-        <label className="block text-sm font-semibold text-cardi-ink">
+        <label className="block text-sm font-semibold text-cardy-ink">
           {label}
-          <span className="ml-2 text-cardi-blue font-bold">
+          <span className="ml-2 text-cardy-blue font-bold">
             {hoverValue || value}/5
           </span>
         </label>
@@ -83,7 +83,7 @@ export function StarRating({
                   isActive
                     ? isHovered
                       ? 'fill-yellow-400 text-yellow-400 drop-shadow-lg'
-                      : 'fill-cardi-yellow text-cardi-yellow'
+                      : 'fill-cardy-yellow text-cardy-yellow'
                     : 'fill-gray-200 text-gray-300 hover:fill-gray-300 hover:text-gray-400'
                 )}
               />

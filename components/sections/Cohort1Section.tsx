@@ -46,7 +46,7 @@ export function Cohort1Section({ data }: Cohort1SectionProps) {
         >
           <div className="space-y-4">
             <motion.h2
-              className="font-h1 text-cardi-ink"
+              className="font-h1 text-cardy-ink"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -56,7 +56,7 @@ export function Cohort1Section({ data }: Cohort1SectionProps) {
             </motion.h2>
 
             <motion.div
-              className="w-32 h-1 bg-gradient-to-r from-cardi-green to-cardi-blue mx-auto rounded-full"
+              className="w-32 h-1 bg-gradient-to-r from-cardy-green to-cardy-blue mx-auto rounded-full"
               initial={{ width: 0, opacity: 0 }}
               whileInView={{ width: 128, opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -64,7 +64,7 @@ export function Cohort1Section({ data }: Cohort1SectionProps) {
             />
 
             <motion.h3
-              className="font-h3 text-cardi-ink/80"
+              className="font-h3 text-cardy-ink/80"
               initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
@@ -74,7 +74,7 @@ export function Cohort1Section({ data }: Cohort1SectionProps) {
             </motion.h3>
 
             <motion.p
-              className="font-body text-cardi-ink/70 max-w-3xl mx-auto"
+              className="font-body text-cardy-ink/70 max-w-3xl mx-auto"
               initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.8 }}
@@ -94,10 +94,10 @@ export function Cohort1Section({ data }: Cohort1SectionProps) {
           viewport={{ once: true }}
         >
           {[
-            { label: 'Started', value: stats.started, icon: Users, color: 'from-cardi-blue to-cardi-indigo' },
-            { label: 'Completed', value: stats.completed, icon: Award, color: 'from-cardi-green to-cardi-blue' },
-            { label: 'Retention', value: stats.retention, icon: TrendingUp, color: 'from-cardi-yellow to-cardi-green' },
-            { label: 'Placement', value: stats.placement, icon: CheckCircle, color: 'from-cardi-green to-cardi-yellow' }
+            { label: 'Started', value: stats.started, icon: Users, color: 'from-cardy-blue to-cardy-indigo' },
+            { label: 'Completed', value: stats.completed, icon: Award, color: 'from-cardy-green to-cardy-blue' },
+            { label: 'Retention', value: stats.retention, icon: TrendingUp, color: 'from-cardy-yellow to-cardy-green' },
+            { label: 'Placement', value: stats.placement, icon: CheckCircle, color: 'from-cardy-green to-cardy-yellow' }
           ].map((stat, index) => {
             const IconComponent = stat.icon
 
@@ -117,8 +117,8 @@ export function Cohort1Section({ data }: Cohort1SectionProps) {
                   <IconComponent className="w-8 h-8 text-white" />
                 </div>
                 <div className="space-y-2">
-                  <div className="font-h2 text-cardi-ink">{stat.value}</div>
-                  <div className="font-caption text-cardi-ink/60 uppercase tracking-wide">{stat.label}</div>
+                  <div className="font-h2 text-cardy-ink">{stat.value}</div>
+                  <div className="font-caption text-cardy-ink/60 uppercase tracking-wide">{stat.label}</div>
                 </div>
               </motion.div>
             )
@@ -134,8 +134,8 @@ export function Cohort1Section({ data }: Cohort1SectionProps) {
           viewport={{ once: true }}
         >
           <div className="text-center space-y-4">
-            <h3 className="font-h2 text-cardi-ink">Success Stories</h3>
-            <p className="font-body text-cardi-ink/60">
+            <h3 className="font-h2 text-cardy-ink">Success Stories</h3>
+            <p className="font-body text-cardy-ink/60">
               Meet our Cohort 1 graduates and their career journeys
             </p>
           </div>
@@ -162,57 +162,57 @@ export function Cohort1Section({ data }: Cohort1SectionProps) {
                   transition={{ duration: 0.3 }}
                 >
                   {/* Background gradient overlay on hover */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-cardi-green/5 to-cardi-blue/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-cardy-green/5 to-cardy-blue/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                   <div className="relative z-10 space-y-6">
                     {/* Header */}
                     <div className="flex items-start justify-between">
                       <div className="flex items-center space-x-4">
                         {/* Avatar placeholder */}
-                        <div className="w-16 h-16 bg-gradient-to-br from-cardi-green to-cardi-blue rounded-full flex items-center justify-center shadow-lg">
+                        <div className="w-16 h-16 bg-gradient-to-br from-cardy-green to-cardy-blue rounded-full flex items-center justify-center shadow-lg">
                           <span className="text-white font-bold text-lg">
                             {graduate.name.charAt(0)}
                           </span>
                         </div>
 
                         <div>
-                          <h4 className="font-h3 text-cardi-ink">{graduate.name}</h4>
-                          <div className="inline-flex items-center px-3 py-1 bg-cardi-blue/10 rounded-full">
-                            <span className="text-xs font-semibold text-cardi-blue uppercase tracking-wide">
+                          <h4 className="font-h3 text-cardy-ink">{graduate.name}</h4>
+                          <div className="inline-flex items-center px-3 py-1 bg-cardy-blue/10 rounded-full">
+                            <span className="text-xs font-semibold text-cardy-blue uppercase tracking-wide">
                               {graduate.track} Track
                             </span>
                           </div>
                         </div>
                       </div>
 
-                      <PentagonMotif size="sm" color="cardi-green" opacity={8} animate={false} />
+                      <PentagonMotif size="sm" color="cardy-green" opacity={8} animate={false} />
                     </div>
 
                     {/* Outcome */}
                     <div className="space-y-2">
                       <div className="flex items-center space-x-2">
-                        <CheckCircle className="w-5 h-5 text-cardi-green" />
-                        <span className="font-body font-medium text-cardi-green">
+                        <CheckCircle className="w-5 h-5 text-cardy-green" />
+                        <span className="font-body font-medium text-cardy-green">
                           {graduate.outcome}
                         </span>
                       </div>
                     </div>
 
                     {/* Story */}
-                    <p className="font-body text-cardi-ink/80 leading-relaxed">
+                    <p className="font-body text-cardy-ink/80 leading-relaxed">
                       {graduate.story}
                     </p>
 
                     {/* Artifacts */}
                     <div className="space-y-3">
-                      <h5 className="font-body font-semibold text-cardi-ink">Key Deliverables:</h5>
+                      <h5 className="font-body font-semibold text-cardy-ink">Key Deliverables:</h5>
                       <div className="flex flex-wrap gap-2">
                         {graduate.artifacts.map((artifact, i) => (
                           <div
                             key={i}
-                            className="px-3 py-1 bg-cardi-ink/5 rounded-full border border-cardi-border/20"
+                            className="px-3 py-1 bg-cardy-ink/5 rounded-full border border-cardy-border/20"
                           >
-                            <span className="text-xs font-medium text-cardi-ink/70">
+                            <span className="text-xs font-medium text-cardy-ink/70">
                               {artifact}
                             </span>
                           </div>
@@ -240,9 +240,9 @@ export function Cohort1Section({ data }: Cohort1SectionProps) {
           transition={{ duration: 0.8, delay: 1.4 }}
           viewport={{ once: true }}
         >
-          <div className="inline-flex items-center space-x-3 px-8 py-4 bg-gradient-to-r from-cardi-green/10 to-cardi-blue/10 backdrop-blur-sm rounded-2xl border border-cardi-green/20 shadow-lg">
-            <div className="w-3 h-3 bg-gradient-to-r from-cardi-green to-cardi-blue rounded-full animate-pulse" />
-            <span className="font-body text-cardi-ink font-medium">
+          <div className="inline-flex items-center space-x-3 px-8 py-4 bg-gradient-to-r from-cardy-green/10 to-cardy-blue/10 backdrop-blur-sm rounded-2xl border border-cardy-green/20 shadow-lg">
+            <div className="w-3 h-3 bg-gradient-to-r from-cardy-green to-cardy-blue rounded-full animate-pulse" />
+            <span className="font-body text-cardy-ink font-medium">
               Proof of concept validated • Foundation established • Model proven
             </span>
           </div>

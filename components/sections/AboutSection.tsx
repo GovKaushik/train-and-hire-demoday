@@ -44,7 +44,7 @@ export function AboutSection({
         >
           <div className="space-y-4">
             <motion.h2
-              className="font-h1 text-cardi-ink"
+              className="font-h1 text-cardy-ink"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -54,7 +54,7 @@ export function AboutSection({
             </motion.h2>
 
             <motion.div
-              className="w-24 h-1 bg-gradient-to-r from-cardi-blue to-cardi-indigo mx-auto rounded-full"
+              className="w-24 h-1 bg-gradient-to-r from-cardy-blue to-cardy-indigo mx-auto rounded-full"
               initial={{ width: 0, opacity: 0 }}
               whileInView={{ width: 96, opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -62,7 +62,7 @@ export function AboutSection({
             />
 
             <motion.h3
-              className="font-h3 text-cardi-ink/80"
+              className="font-h3 text-cardy-ink/80"
               initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
@@ -86,19 +86,19 @@ export function AboutSection({
             <div className="card-surface p-8 h-full">
               <div className="space-y-6">
                 <div className="flex items-center space-x-4">
-                  <div className="w-16 h-16 bg-gradient-to-br from-cardi-blue to-cardi-indigo rounded-2xl flex items-center justify-center shadow-lg">
+                  <div className="w-16 h-16 bg-gradient-to-br from-cardy-blue to-cardy-indigo rounded-2xl flex items-center justify-center shadow-lg">
                     <Target className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="font-h3 text-cardi-ink">Our Mission</h3>
+                  <h3 className="font-h3 text-cardy-ink">Our Mission</h3>
                 </div>
-                <p className="font-body text-cardi-ink/80 leading-relaxed">
+                <p className="font-body text-cardy-ink/80 leading-relaxed">
                   {mission}
                 </p>
               </div>
 
               {/* Pentagon accent */}
               <div className="absolute -top-3 -right-3">
-                <div className="w-8 h-8 bg-cardi-blue/20 rounded-full" />
+                <div className="w-8 h-8 bg-cardy-blue/20 rounded-full" />
               </div>
             </div>
           </motion.div>
@@ -114,19 +114,19 @@ export function AboutSection({
             <div className="card-surface p-8 h-full">
               <div className="space-y-6">
                 <div className="flex items-center space-x-4">
-                  <div className="w-16 h-16 bg-gradient-to-br from-cardi-green to-cardi-yellow rounded-2xl flex items-center justify-center shadow-lg">
+                  <div className="w-16 h-16 bg-gradient-to-br from-cardy-green to-cardy-yellow rounded-2xl flex items-center justify-center shadow-lg">
                     <TrendingUp className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="font-h3 text-cardi-ink">Our Approach</h3>
+                  <h3 className="font-h3 text-cardy-ink">Our Approach</h3>
                 </div>
-                <p className="font-body text-cardi-ink/80 leading-relaxed">
+                <p className="font-body text-cardy-ink/80 leading-relaxed">
                   {approach}
                 </p>
               </div>
 
               {/* Pentagon accent */}
               <div className="absolute -top-3 -right-3">
-                <div className="w-8 h-8 bg-cardi-green/20 rounded-full" />
+                <div className="w-8 h-8 bg-cardy-green/20 rounded-full" />
               </div>
             </div>
           </motion.div>
@@ -141,8 +141,8 @@ export function AboutSection({
           viewport={{ once: true }}
         >
           <div className="text-center">
-            <h3 className="font-h2 text-cardi-ink mb-4">How We Deliver</h3>
-            <p className="font-body text-cardi-ink/60">
+            <h3 className="font-h2 text-cardy-ink mb-4">How We Deliver</h3>
+            <p className="font-body text-cardy-ink/60">
               Four pillars of our workforce development approach
             </p>
           </div>
@@ -151,10 +151,10 @@ export function AboutSection({
             {features.map((feature, index) => {
               const IconComponent = iconComponents[feature.icon as keyof typeof iconComponents] || Target
               const gradientColors = [
-                'from-cardi-red to-cardi-orange',
-                'from-cardi-yellow to-cardi-green',
-                'from-cardi-green to-cardi-blue',
-                'from-cardi-blue to-cardi-indigo'
+                'from-cardy-red to-cardy-orange',
+                'from-cardy-yellow to-cardy-green',
+                'from-cardy-green to-cardy-blue',
+                'from-cardy-blue to-cardy-indigo'
               ]
 
               return (
@@ -188,10 +188,10 @@ export function AboutSection({
 
                       {/* Content */}
                       <div className="space-y-2">
-                        <h4 className="font-h3 text-cardi-ink group-hover:text-cardi-ink transition-colors duration-300">
+                        <h4 className="font-h3 text-cardy-ink group-hover:text-cardy-ink transition-colors duration-300">
                           {feature.title}
                         </h4>
-                        <p className="font-caption text-cardi-ink/70 leading-relaxed">
+                        <p className="font-caption text-cardy-ink/70 leading-relaxed">
                           {feature.description}
                         </p>
                       </div>
@@ -217,9 +217,9 @@ export function AboutSection({
           transition={{ duration: 0.8, delay: 1.2 }}
           viewport={{ once: true }}
         >
-          <div className="inline-flex items-center space-x-3 px-8 py-4 bg-gradient-to-r from-cardi-blue/10 to-cardi-indigo/10 backdrop-blur-sm rounded-2xl border border-cardi-blue/20 shadow-lg">
-            <div className="w-3 h-3 bg-gradient-to-r from-cardi-blue to-cardi-indigo rounded-full animate-pulse" />
-            <span className="font-body text-cardi-ink font-medium">
+          <div className="inline-flex items-center space-x-3 px-8 py-4 bg-gradient-to-r from-cardy-blue/10 to-cardy-indigo/10 backdrop-blur-sm rounded-2xl border border-cardy-blue/20 shadow-lg">
+            <div className="w-3 h-3 bg-gradient-to-r from-cardy-blue to-cardy-indigo rounded-full animate-pulse" />
+            <span className="font-body text-cardy-ink font-medium">
               Building careers, one cohort at a time
             </span>
           </div>

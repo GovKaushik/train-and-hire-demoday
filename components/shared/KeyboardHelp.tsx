@@ -51,7 +51,7 @@ export function KeyboardHelp() {
         onClick={() => setIsOpen(true)}
         className="fixed bottom-6 right-6 w-14 h-14 bg-white/90 backdrop-blur-xl rounded-full shadow-2xl flex items-center justify-center hover:bg-white hover:scale-110 transition-all duration-300 z-40 border border-white/20"
       >
-        <Keyboard className="w-6 h-6 text-cardi-ink" />
+        <Keyboard className="w-6 h-6 text-cardy-ink" />
       </motion.button>
 
       {/* Help Overlay */}
@@ -72,7 +72,7 @@ export function KeyboardHelp() {
               onClick={(e) => e.stopPropagation()}
             >
               <div className="flex items-center justify-between mb-6">
-                <h2 className="text-2xl font-bold text-cardi-ink flex items-center">
+                <h2 className="text-2xl font-bold text-cardy-ink flex items-center">
                   <Keyboard className="w-6 h-6 mr-3" />
                   Keyboard Shortcuts
                 </h2>
@@ -95,7 +95,7 @@ export function KeyboardHelp() {
                       transition={{ delay: index * 0.1 }}
                       className="flex items-center space-x-4 p-3 rounded-2xl hover:bg-gray-50 transition-colors"
                     >
-                      <div className="w-10 h-10 bg-gradient-to-br from-cardi-blue to-blue-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <div className="w-10 h-10 bg-gradient-to-br from-cardy-blue to-blue-600 rounded-xl flex items-center justify-center flex-shrink-0">
                         <Icon className="w-5 h-5 text-white" />
                       </div>
                       <div className="flex-1">
@@ -109,7 +109,7 @@ export function KeyboardHelp() {
                             </kbd>
                           ))}
                         </div>
-                        <p className="text-sm text-cardi-slate">{shortcut.description}</p>
+                        <p className="text-sm text-cardy-slate">{shortcut.description}</p>
                       </div>
                     </motion.div>
                   )
@@ -117,7 +117,7 @@ export function KeyboardHelp() {
               </div>
 
               <div className="mt-8 pt-6 border-t border-gray-200">
-                <p className="text-xs text-cardi-slate/70 text-center">
+                <p className="text-xs text-cardy-slate/70 text-center">
                   Press <kbd className="px-1 py-0.5 bg-gray-200 rounded text-xs">ESC</kbd> or click outside to close
                 </p>
               </div>

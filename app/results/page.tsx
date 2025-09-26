@@ -167,10 +167,10 @@ export default function ResultsPage() {
                   <Sparkles className="w-8 h-8 text-white" />
                 )}
               </motion.div>
-              <h2 className="text-2xl font-bold text-cardi-ink">
+              <h2 className="text-2xl font-bold text-cardy-ink">
                 {trackName} Team
               </h2>
-              <p className="text-cardi-slate">
+              <p className="text-cardy-slate">
                 {trackName === 'BA' ? 'Business Analysis' : 'Workplace AI'}
               </p>
             </div>
@@ -221,7 +221,7 @@ export default function ResultsPage() {
                   >
                     {Object.entries(result.breakdown).map(([key, value]) => (
                       <div key={key}>
-                        <div className="flex justify-between text-sm text-cardi-slate mb-1">
+                        <div className="flex justify-between text-sm text-cardy-slate mb-1">
                           <span className="capitalize">{key}</span>
                           <span>{value.toFixed(1)}</span>
                         </div>
@@ -244,7 +244,7 @@ export default function ResultsPage() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 1.5 }}
-                  className="text-sm text-cardi-slate"
+                  className="text-sm text-cardy-slate"
                 >
                   Rated by {result.count} judge{result.count !== 1 ? 's' : ''}
                 </motion.div>
@@ -252,7 +252,7 @@ export default function ResultsPage() {
             ) : (
               <div className="text-center py-8">
                 <div className="text-4xl text-gray-300 mb-2">—</div>
-                <p className="text-cardi-slate">No ratings yet</p>
+                <p className="text-cardy-slate">No ratings yet</p>
               </div>
             )}
           </div>
@@ -263,7 +263,7 @@ export default function ResultsPage() {
 
   if (revealPhase === 0) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-cardi-ink via-gray-900 to-cardi-ink flex items-center justify-center p-8">
+      <div className="min-h-screen bg-gradient-to-br from-cardy-ink via-gray-900 to-cardy-ink flex items-center justify-center p-8">
         <div className="text-center">
           <motion.div
             className="w-24 h-24 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-8 shadow-2xl"
@@ -288,7 +288,7 @@ export default function ResultsPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-cardi-cloud via-white to-yellow-50 p-8">
+    <div className="min-h-screen bg-gradient-to-br from-cardy-cloud via-white to-yellow-50 p-8">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <motion.div
@@ -296,10 +296,10 @@ export default function ResultsPage() {
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <h1 className="text-5xl font-bold text-cardi-ink mb-4">
+          <h1 className="text-5xl font-bold text-cardy-ink mb-4">
             🏆 Demo Day Results
           </h1>
-          <p className="text-xl text-cardi-slate">
+          <p className="text-xl text-cardy-slate">
             Train & Hire Cohort 2 Final Presentations
           </p>
         </motion.div>
@@ -389,30 +389,30 @@ export default function ResultsPage() {
                       {result.ratings.map((rating) => (
                         <div key={rating.id} className="p-4 bg-gray-50 rounded-lg">
                           <div className="flex justify-between items-center mb-2">
-                            <div className="font-semibold text-cardi-ink">
+                            <div className="font-semibold text-cardy-ink">
                               {rating.judgeName}
                             </div>
-                            <div className="text-sm text-cardi-slate">
+                            <div className="text-sm text-cardy-slate">
                               {rating.judgeRole || 'Judge'}
                             </div>
                           </div>
                           <div className="grid grid-cols-3 gap-4 text-sm">
                             <div>
-                              <span className="text-cardi-slate">Technical:</span>
+                              <span className="text-cardy-slate">Technical:</span>
                               <div className="flex items-center">
                                 <span className="font-semibold">{rating.technical}</span>
                                 <Star className="w-3 h-3 ml-1 fill-current text-yellow-500" />
                               </div>
                             </div>
                             <div>
-                              <span className="text-cardi-slate">Communication:</span>
+                              <span className="text-cardy-slate">Communication:</span>
                               <div className="flex items-center">
                                 <span className="font-semibold">{rating.communication}</span>
                                 <Star className="w-3 h-3 ml-1 fill-current text-yellow-500" />
                               </div>
                             </div>
                             <div>
-                              <span className="text-cardi-slate">Delivery:</span>
+                              <span className="text-cardy-slate">Delivery:</span>
                               <div className="flex items-center">
                                 <span className="font-semibold">{rating.delivery}</span>
                                 <Star className="w-3 h-3 ml-1 fill-current text-yellow-500" />

@@ -5,7 +5,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Cardi AI - Train & Hire DemoDay',
+  title: 'Cardy AI - Train & Hire DemoDay',
   description: 'Where workforce development meets real delivery',
 }
 
@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} bg-cardi-cloud text-cardi-ink antialiased`}>
+      <body className={`${inter.className} bg-cardy-cloud text-cardy-ink antialiased`}>
         {children}
       </body>
     </html>

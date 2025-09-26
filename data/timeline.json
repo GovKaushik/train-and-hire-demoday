@@ -1,0 +1,184 @@
+{
+  "blocks": [
+    {
+      "id": "w1-2",
+      "label": "Weeks 1–2",
+      "wai": {
+        "chip": "Env setup, voice→text",
+        "hover": "Set up n8n + voice capture; baseline flow working",
+        "title": "Weeks 1–2 — WAI",
+        "subtitle": "Environment + input pipeline",
+        "body": [
+          "Provisioned n8n and configured basic workflows.",
+          "Implemented meeting/voice capture → text pipeline for BA inputs.",
+          "Mapped I/O contracts for downstream enrichment."
+        ],
+        "highlights": [
+          "n8n instance running with auth",
+          "Audio→text working (meeting notes pipeline)",
+          "First draft prompt library scaffolded"
+        ]
+      },
+      "ba": {
+        "chip": "CWS intro, intake BPD",
+        "hover": "CWS landscape → Intake BPD first pass",
+        "title": "Weeks 1–2 — BA",
+        "subtitle": "CWS overview + Intake process diagram",
+        "body": [
+          "Studied end-to-end CWS lifecycle (intake → assessment → case → permanency).",
+          "Produced first-pass Intake Business Process Diagram (BPD).",
+          "Identified stakeholders and hand-offs."
+        ],
+        "highlights": [
+          "CWS overview brief complete",
+          "Intake BPD v1",
+          "Stakeholder map"
+        ]
+      }
+    },
+    {
+      "id": "w3-4",
+      "label": "Weeks 3–4",
+      "wai": {
+        "chip": "Jira integration",
+        "hover": "n8n ↔ Jira issues for BA artifacts",
+        "title": "Weeks 3–4 — WAI",
+        "subtitle": "Jira integration & artifact creation",
+        "body": [
+          "Connected n8n to Jira for story/issue creation.",
+          "Mapped BA artifact fields into Jira issue templates.",
+          "Error handling & retries for API calls."
+        ],
+        "highlights": [
+          "Jira OAuth configured",
+          "Story template fields mapped",
+          "First end-to-end story creation"
+        ]
+      },
+      "ba": {
+        "chip": "BPD refine, FRs",
+        "hover": "Refined Intake BPD; started Functional Requirements",
+        "title": "Weeks 3–4 — BA",
+        "subtitle": "BPD refinement + FR reading",
+        "body": [
+          "Iterated Intake BPD to cover edge cases and alternative flows.",
+          "Read and annotated exemplar Functional Requirements (FRs).",
+          "Aligned BPD steps to FR coverage."
+        ],
+        "highlights": [
+          "Intake BPD v2 (edge cases included)",
+          "FR examples annotated",
+          "BPD ↔ FR traceability draft"
+        ]
+      }
+    },
+    {
+      "id": "w5-6",
+      "label": "Weeks 5–6",
+      "wai": {
+        "chip": "AC generation, ADF",
+        "hover": "Acceptance Criteria generation; artifact formatting",
+        "title": "Weeks 5–6 — WAI",
+        "subtitle": "Generate ACs + ADF (artifact delivery format)",
+        "body": [
+          "Prompted robust Acceptance Criteria generation from BA inputs.",
+          "Normalized outputs to a consistent artifact delivery format (ADF).",
+          "Added guardrails for incomplete inputs."
+        ],
+        "highlights": [
+          "AC generation v1",
+          "ADF schema defined",
+          "Prompt guardrails added"
+        ]
+      },
+      "ba": {
+        "chip": "Write FRs & ACs",
+        "hover": "Drafted FRs; wrote ACs aligned to standards",
+        "title": "Weeks 5–6 — BA",
+        "subtitle": "Authoring FRs and ACs",
+        "body": [
+          "Authored FRs for intake flows with clear scope & rationale.",
+          "Wrote ACs emphasizing flexible entry order and single-screen nav.",
+          "Cross-checked standards compliance (ACF/CCWIS)."
+        ],
+        "highlights": [
+          "FR pack v1",
+          "AC pack v1",
+          "Standards checklist passed"
+        ]
+      }
+    },
+    {
+      "id": "w7-8",
+      "label": "Weeks 7–8",
+      "wai": {
+        "chip": "E2E flow, logging",
+        "hover": "Wire whole pipeline; add observability",
+        "title": "Weeks 7–8 — WAI",
+        "subtitle": "End-to-end pipeline + logging",
+        "body": [
+          "Wired input → enrichment → artifact → Jira end-to-end.",
+          "Added logging/metrics to monitor throughput & errors.",
+          "Refined UX hooks (preview before commit)."
+        ],
+        "highlights": [
+          "E2E demo working",
+          "Structured logs + error surfacing",
+          "Preview/confirm pattern"
+        ]
+      },
+      "ba": {
+        "chip": "System demos, comms",
+        "hover": "Demo reps in the system; stakeholder comms",
+        "title": "Weeks 7–8 — BA",
+        "subtitle": "In-system demo reps + communication",
+        "body": [
+          "Performed intake demos in the system; handled Q&A.",
+          "Practiced stakeholder-style communication and narrative.",
+          "Peer feedback loops to tighten delivery."
+        ],
+        "highlights": [
+          "Demo v1 recorded",
+          "Stakeholder one-pager",
+          "Peer feedback notes"
+        ]
+      }
+    },
+    {
+      "id": "w9-10",
+      "label": "Weeks 9–10",
+      "wai": {
+        "chip": "Polish, docs, demo",
+        "hover": "Polish UX; finalize docs; demo script",
+        "title": "Weeks 9–10 — WAI",
+        "subtitle": "Polish + documentation + final demo",
+        "body": [
+          "Polished prompts, error states, and artifact formatting.",
+          "Produced technical + usage docs.",
+          "Final demo run-through & timing."
+        ],
+        "highlights": [
+          "Prompts v2",
+          "User + tech docs",
+          "Final demo script"
+        ]
+      },
+      "ba": {
+        "chip": "Capstone, final prep",
+        "hover": "Capstone FR/AC pack; final presentation",
+        "title": "Weeks 9–10 — BA",
+        "subtitle": "Capstone pack + presentation prep",
+        "body": [
+          "Consolidated FR + AC pack as capstone.",
+          "Aligned slides to demo story; refined talk track.",
+          "Dry-runs with timeboxes and final edits."
+        ],
+        "highlights": [
+          "Capstone submitted",
+          "Story + slides final",
+          "Dry-run sign-off"
+        ]
+      }
+    }
+  ]
+}

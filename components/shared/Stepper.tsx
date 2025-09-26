@@ -38,9 +38,9 @@ export function Stepper({ items, className }: StepperProps) {
               className={cn(
                 'w-20 h-20 rounded-full border-3 flex items-center justify-center transition-all duration-500 backdrop-blur-sm shadow-2xl relative overflow-hidden',
                 item.status === 'completed'
-                  ? 'bg-gradient-to-br from-cardi-green to-green-600 border-cardi-green text-white shadow-cardi-green/30'
+                  ? 'bg-gradient-to-br from-cardy-green to-green-600 border-cardy-green text-white shadow-cardy-green/30'
                   : item.status === 'current'
-                  ? 'bg-gradient-to-br from-cardi-blue to-blue-600 border-cardi-blue text-white shadow-cardi-blue/30 animate-pulse'
+                  ? 'bg-gradient-to-br from-cardy-blue to-blue-600 border-cardy-blue text-white shadow-cardy-blue/30 animate-pulse'
                   : 'bg-white/90 border-gray-200 text-gray-400 shadow-black/10'
               )}
               whileHover={{
@@ -86,7 +86,7 @@ export function Stepper({ items, className }: StepperProps) {
                 className={cn(
                   'font-semibold text-base mb-2',
                   item.status === 'completed' || item.status === 'current'
-                    ? 'text-cardi-ink'
+                    ? 'text-cardy-ink'
                     : 'text-gray-400'
                 )}
                 animate={{
@@ -102,7 +102,7 @@ export function Stepper({ items, className }: StepperProps) {
               </motion.h3>
               {item.description && (
                 <motion.p
-                  className="text-sm text-cardi-slate leading-relaxed"
+                  className="text-sm text-cardy-slate leading-relaxed"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: index * 0.15 + 0.4 }}
@@ -135,7 +135,7 @@ export function Stepper({ items, className }: StepperProps) {
                 <ArrowRight className={cn(
                   "w-8 h-8 transition-colors duration-500",
                   items[index].status === 'completed'
-                    ? 'text-cardi-green'
+                    ? 'text-cardy-green'
                     : 'text-gray-300'
                 )} />
               </motion.div>
@@ -144,7 +144,7 @@ export function Stepper({ items, className }: StepperProps) {
               <div className="absolute top-1/2 left-0 w-full h-0.5 bg-gray-200 -translate-y-1/2 -z-10">
                 {items[index].status === 'completed' && (
                   <motion.div
-                    className="h-full bg-gradient-to-r from-cardi-green to-green-500"
+                    className="h-full bg-gradient-to-r from-cardy-green to-green-500"
                     initial={{ width: 0 }}
                     animate={{ width: '100%' }}
                     transition={{ delay: index * 0.15 + 0.5, duration: 0.8 }}

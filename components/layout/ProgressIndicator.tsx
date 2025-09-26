@@ -14,7 +14,7 @@ export function ProgressIndicator({ sectionCount }: ProgressIndicatorProps) {
     <div className="fixed right-8 top-1/2 -translate-y-1/2 z-50">
       <div className="relative h-48 w-1 bg-gray-200 rounded-full overflow-hidden">
         <div
-          className="absolute top-0 left-0 w-full bg-gradient-to-b from-cardi-blue via-cardi-green to-cardi-yellow rounded-full transition-all duration-300"
+          className="absolute top-0 left-0 w-full bg-gradient-to-b from-cardy-blue via-cardy-green to-cardy-yellow rounded-full transition-all duration-300"
           style={{ height: `${progress}%` }}
         />
       </div>
@@ -25,7 +25,7 @@ export function ProgressIndicator({ sectionCount }: ProgressIndicatorProps) {
             className={cn(
               'w-2 h-2 rounded-full transition-all duration-300',
               currentSection === index
-                ? 'bg-cardi-ink scale-125'
+                ? 'bg-cardy-ink scale-125'
                 : 'bg-gray-300'
             )}
           />

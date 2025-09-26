@@ -71,18 +71,18 @@ export function DemoModal({ isOpen, onClose, type }: DemoModalProps) {
               <IconComponent className="w-8 h-8 text-white" />
             </motion.div>
             <div>
-              <h3 className="text-2xl font-bold text-cardi-ink">{content.title}</h3>
+              <h3 className="text-2xl font-bold text-cardy-ink">{content.title}</h3>
               <p className="text-lg" style={{ color: content.color }}>{content.subtitle}</p>
             </div>
           </div>
 
-          <p className="text-cardi-slate leading-relaxed text-lg">
+          <p className="text-cardy-slate leading-relaxed text-lg">
             {content.description}
           </p>
 
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <h4 className="font-semibold text-cardi-ink mb-3 flex items-center">
+              <h4 className="font-semibold text-cardy-ink mb-3 flex items-center">
                 <Play className="w-4 h-4 mr-2" style={{ color: content.color }} />
                 Demo Highlights
               </h4>
@@ -90,7 +90,7 @@ export function DemoModal({ isOpen, onClose, type }: DemoModalProps) {
                 {content.highlights.map((highlight, index) => (
                   <motion.li
                     key={highlight}
-                    className="flex items-center space-x-2 text-sm text-cardi-slate"
+                    className="flex items-center space-x-2 text-sm text-cardy-slate"
                     initial={{ opacity: 0, x: -10 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: index * 0.1 }}
@@ -106,7 +106,7 @@ export function DemoModal({ isOpen, onClose, type }: DemoModalProps) {
             </div>
 
             <div>
-              <h4 className="font-semibold text-cardi-ink mb-3 flex items-center">
+              <h4 className="font-semibold text-cardy-ink mb-3 flex items-center">
                 <Target className="w-4 h-4 mr-2" style={{ color: content.color }} />
                 What to Watch For
               </h4>
@@ -114,7 +114,7 @@ export function DemoModal({ isOpen, onClose, type }: DemoModalProps) {
                 {content.watchFor.map((item, index) => (
                   <motion.li
                     key={item}
-                    className="flex items-center space-x-2 text-sm text-cardi-slate"
+                    className="flex items-center space-x-2 text-sm text-cardy-slate"
                     initial={{ opacity: 0, x: -10 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.2 + (index * 0.1) }}
@@ -206,7 +206,7 @@ export function DemoModal({ isOpen, onClose, type }: DemoModalProps) {
             {/* Footer */}
             <div className="px-8 py-6 bg-gray-50 border-t border-gray-200">
               <div className="flex items-center justify-between">
-                <div className="text-sm text-cardi-slate">
+                <div className="text-sm text-cardy-slate">
                   Ready to see innovation in action
                 </div>
 
